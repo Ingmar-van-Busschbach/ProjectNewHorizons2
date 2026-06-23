@@ -75,6 +75,7 @@ public class ContextSelector : MonoBehaviour
         if (clickInput.action.WasPressedThisFrame())
         {
             isHeld = true;
+
             Ray ray = playerCamera.ScreenPointToRay(mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
