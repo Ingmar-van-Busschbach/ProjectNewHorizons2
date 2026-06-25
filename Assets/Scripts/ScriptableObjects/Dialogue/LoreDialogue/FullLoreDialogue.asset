@@ -14,7 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
-    dialogue: 
+    dialogue: Who did this to you?
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Remi
+    dialogue: The humans, the cheese they laid out, it looked so succulent, so I
+      took a bite. They poisoned the cheese; they want us gone.
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Father Rat
+    dialogue: Doctor, Remi got poisoned up there, can we develop an antidote for
+      this, please. We are being exterminated.
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019m sorry, but Remi is already gone. We can't make such an antidote.
+      What we can have is revenge."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019ve seen rats die more and more of poison, so, I\u2019ve been
+      creating a little something to give them a taste of their own medicine. They
+      fell to the plague once. It will happen again."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Father Rat
+    dialogue: "The humans have lorded over us for far too long. It's time we take
+      them down a peg and show them what we\u2019re worth!"
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: "I\u2019ve devised a plan to make a plague like no other. I call it:
+      the Opus Plague."
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
   endScene: 0
