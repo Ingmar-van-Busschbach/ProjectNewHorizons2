@@ -44,6 +44,7 @@ MonoBehaviour:
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor
+  - speakerName: Plague Doctor Rat
     dialogue: "I\u2019ve devised a plan to make a plague like no other. I call it:
       the Opus Plague."
     printDuration: 0.05

@@ -29,9 +29,9 @@ public class UnlockMenuHandler : MonoBehaviour
     private bool CheckResourceCount()
     {
         if(currentRoomToUnlock == null) return false;
-        return ResourceManager.instance.wood  > currentRoomToUnlock.woodToUnlock  &&
-               ResourceManager.instance.stone > currentRoomToUnlock.stoneToUnlock &&
-               ResourceManager.instance.metal > currentRoomToUnlock.metalToUnlock;
+        return ResourceManager.instance.wood  >= currentRoomToUnlock.woodToUnlock  &&
+               ResourceManager.instance.stone >= currentRoomToUnlock.stoneToUnlock &&
+               ResourceManager.instance.metal >= currentRoomToUnlock.metalToUnlock;
     }
     public void UnlockRoom()
     {
