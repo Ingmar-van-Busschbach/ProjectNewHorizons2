@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
+  m_Name: RatStats_Tutorial
+  m_EditorClassIdentifier: 
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: "This little pop up is the rat\u2019s individual passport! It\u2019ll
+      tell you about them, including their R.A.T.S. statistics. "
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "Their Resourcefulness will tell you how productive they are, as well
+      as their happiness, though\u2026 ah, don\u2019t worry too much about that for
+      now. "
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "The Athletics tell you how likely they\u2019ll survive the outside
+      world\u2019s danger, and the Tempo\u2026 makes them whizz around speedily! "
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "Smarts, that\u2019ll be important once we recover my laboratory. After
+      all, I can\u2019t have common rats wreaking havoc among my precious equipment."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: Either way, go on!
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  endScene: 0
