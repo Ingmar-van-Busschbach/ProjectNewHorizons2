@@ -17,8 +17,6 @@ public class RatVisit : MonoBehaviour
 
     IEnumerator RatVisitor()
     {
-        yield return new WaitForSeconds(ratVisitorCooldown);
-
         Character spawnedRat = Instantiate(ratPrefab, spawnPosition.position, transform.rotation);
         Transform roomLocation = room.AssignCharacter(spawnedRat);
         if (roomLocation == spawnedRat.gameObject.transform) { Destroy(spawnedRat.gameObject); }
@@ -26,7 +24,8 @@ public class RatVisit : MonoBehaviour
         {
             spawnedRat.MoveToLocation(roomLocation);
             ResourceManager.instance.ResourceHandler(EResourceType.Rats, 1);
-        } 
+        }
+        yield return new WaitForSeconds(ratVisitorCooldown);
         StartCoroutine(RatVisitor());
     }
 
