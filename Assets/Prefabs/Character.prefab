@@ -215,6 +215,7 @@ MonoBehaviour:
     tempo: 0
     smarts: 0
   names: {fileID: 11400000, guid: e263ad6be49ca584bafb1ca03303b6e5, type: 2}
+  isInfected: 0
   currentRoom: {fileID: 0}
 --- !u!65 &7122343822052281349
 BoxCollider:
@@ -312,7 +313,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
