@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
+  m_Name: SocializingRoom_Tutorial
+  m_EditorClassIdentifier: 
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: 'Wonderful! That, my friend, is the living room. Have you noticed the
+      happiness in the R.A.T.S. statistics? '
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: For every rat, their happiness slowly drains over time. If they feel
+      too down, the rats will produce slower.
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: With some time in the living room, their happiness will slowly build
+      up again. If you keep the spirits high, they might even produce double! So,
+      be sure to switch out your rats over time.
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  endScene: 0
