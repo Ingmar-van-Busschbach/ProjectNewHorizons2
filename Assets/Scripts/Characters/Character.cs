@@ -8,6 +8,8 @@ using UnityEngine.Rendering;
 public class Character : MonoBehaviour
 {
     [SerializeField] private float idleRotationSpeed = 5;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite infectedSprite;
     public StatPlugs statPlugs;
     public Stat stats;
     public RatNames names;
@@ -57,6 +59,10 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
+        if (isInfected)
+        {
+            spriteRenderer.sprite = infectedSprite;
+        }
         if (navMeshAgent == null)
         {
             return;
