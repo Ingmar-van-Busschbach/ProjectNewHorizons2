@@ -977,7 +977,7 @@ PrefabInstance:
     - target: {fileID: 1471111505960997094, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: tutorialDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: a14a56ef527a16b488b8a76d34223898, type: 2}
+      objectReference: {fileID: 11400000, guid: 6b348c2bd5161dd45984ffa19e6f3d5b, type: 2}
     - target: {fileID: 1471111505960997094, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: tutorialSceneName
       value: NewMainLevel
@@ -11638,7 +11638,7 @@ PrefabInstance:
     - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: unlockDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 7f1c72fa6a1233145aef743e0be5205c, type: 2}
+      objectReference: {fileID: 11400000, guid: f7f0adbedd3d32640b00d2e7c9c2d1b9, type: 2}
     - target: {fileID: 7626691849799052395, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.601
