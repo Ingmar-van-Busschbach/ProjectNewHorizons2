@@ -1874,6 +1874,26 @@ PrefabInstance:
       value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: unlockedRoom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: woodToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: metalToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: stoneToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: unlockDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c42bb69a5b87f474f8e7d533fa00e0c7, type: 2}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: canSwitchResourceTypes
       value: 1
       objectReference: {fileID: 0}
@@ -11545,6 +11565,10 @@ PrefabInstance:
       propertyPath: timeToProduce
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
+      propertyPath: unlockDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f1c72fa6a1233145aef743e0be5205c, type: 2}
     - target: {fileID: 7626691849799052395, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.601
@@ -13915,6 +13939,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.92
       objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: unlockedRoom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: woodToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: metalToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: stoneToUnlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: unlockDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: bdec436189df4bf499bdf869b9b1e6c4, type: 2}
     - target: {fileID: 8561891467908242212, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
       propertyPath: m_Name
       value: Food_Room
@@ -21680,6 +21724,10 @@ PrefabInstance:
     - target: {fileID: 249548308960210851, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452099909542016610, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100.00012
       objectReference: {fileID: 0}
     - target: {fileID: 508099892099833073, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
       propertyPath: contextSelector
