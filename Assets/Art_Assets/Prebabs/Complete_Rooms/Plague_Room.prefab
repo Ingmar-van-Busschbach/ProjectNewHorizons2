@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7479360145246224688, guid: fde351ad366ac4a4da22f37538733534, type: 3}
+      propertyPath: unlockDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f7f0adbedd3d32640b00d2e7c9c2d1b9, type: 2}
     - target: {fileID: 8271827785517402763, guid: fde351ad366ac4a4da22f37538733534, type: 3}
       propertyPath: m_Enabled
       value: 0
