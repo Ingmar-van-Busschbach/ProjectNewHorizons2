@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
+    dialogue: 
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
     dialogue: "The humans have lorded over us for far too long. It's time we take
       them down a peg and show them what we\u2019re worth!"
     printDuration: 0.05

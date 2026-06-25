@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
+    dialogue: 
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
     dialogue: Who did this to you?
     printDuration: 0.05
     dialogueVoice: {fileID: 8300000, guid: 8cb4856ba7c999d42bc77f8ccf3cc367, type: 3}
