@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: 
     dialogue: "Oh! The school, that\u2019ll be very important to you in a moment. "
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
