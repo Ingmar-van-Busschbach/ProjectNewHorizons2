@@ -12,6 +12,7 @@ public class Character : MonoBehaviour
     public Stat stats;
     public RatNames names;
     public bool isInfected;
+    public string ratName;
 
     // Components
     [HideInInspector] public Room currentRoom;
@@ -50,7 +51,7 @@ public class Character : MonoBehaviour
     private void Start()
     {
         stats = statPlugs.GenerateStats();
-        name = names.GenerateName();
+        ratName = names.GenerateName();
         navMeshAgent.speed *= GetTempo();
     }
 

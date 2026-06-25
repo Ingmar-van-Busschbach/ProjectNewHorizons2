@@ -57,6 +57,7 @@ public class ResourceManager : MonoBehaviour
     {
         yield return new WaitForSeconds(dayCycleTime);
         nutrition -= nutritionDrain * rats;
+        nutritionCounter.text = nutrition.ToString();
         if (nutrition < 0 || rats < 0)
         {
             Debug.Log("oops you failed");

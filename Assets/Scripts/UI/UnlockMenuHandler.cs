@@ -11,6 +11,7 @@ public class UnlockMenuHandler : MonoBehaviour
     [SerializeField] private TMP_Text stoneToUnlock;
     [SerializeField] private TMP_Text metalToUnlock;
     [SerializeField] private Button unlockButton;
+    [SerializeField] private ContextSelector contextSelector;
     public void SetRoomToUnlock(Room newRoomToUnlock)
     {
         currentRoomToUnlock = newRoomToUnlock;
@@ -37,6 +38,9 @@ public class UnlockMenuHandler : MonoBehaviour
         if (CheckResourceCount())
         {
             currentRoomToUnlock.unlockedRoom = true;
+            contextSelector.AnimateRoomUnlockMenu(false);
         }
+
+        DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
     }
 }
