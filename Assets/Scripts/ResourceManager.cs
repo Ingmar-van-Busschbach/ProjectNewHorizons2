@@ -97,7 +97,6 @@ public class ResourceManager : MonoBehaviour
             case EResourceType.PlagueVials:
                 plagueVials += amount;
                 PlagueVialCounter.text = plagueVials.ToString();
-                PlagueManager.instance.checkPlagueVials();
                 break;
                 
         }

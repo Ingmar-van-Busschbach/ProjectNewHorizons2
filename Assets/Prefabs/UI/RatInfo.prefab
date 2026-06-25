@@ -272,6 +272,7 @@ MonoBehaviour:
   tempo: {fileID: 380577946234001705}
   smarts: {fileID: 6982930260783841420}
   ratNameText: {fileID: 5111093328523457645}
+  infectButton: {fileID: 6364530253392533948}
 --- !u!1 &1144532935361543122
 GameObject:
   m_ObjectHideFlags: 0

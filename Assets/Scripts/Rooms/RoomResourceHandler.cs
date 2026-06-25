@@ -34,21 +34,24 @@ public class RoomResourceHandler : Room
         while(currentTime > 0)
         {
             yield return new WaitForSeconds(0.1f);
-            float averageStat = 0;
-            foreach(Character character in characterIndex.Keys)
-            {
-                averageStat += character.GetRecourcefulness();
-            }
             if(characterIndex.Count > 0)
             {
-                averageStat = averageStat / characterIndex.Count;
+                float averageStat = 0;
+                foreach (Character character in characterIndex.Keys)
+                {
+                    averageStat += character.GetRecourcefulness();
+                }
+                if (characterIndex.Count > 0)
+                {
+                    averageStat = averageStat / characterIndex.Count;
+                }
+                else
+                {
+                    averageStat = 1;
+                }
+                averageStat = RemapFloat(averageStat, new Vector2(0, 2), statEffectiveness);
+                currentTime -= 0.1f * averageStat;
             }
-            else
-            {
-                averageStat = 1;
-            }
-            averageStat = RemapFloat(averageStat, new Vector2(0, 2), statEffectiveness);
-            currentTime -= 0.1f * averageStat;
         }
         collectButton.gameObject.SetActive(true);
     }

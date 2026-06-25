@@ -184,7 +184,7 @@ public class ContextSelector : MonoBehaviour
             AnimateRoomInfoMenu(false);
             if (ratInfoMenu.TryGetComponent(out RatStatDisplay ratStatDisplay))
             {
-                ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName);
+                ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName, character);
             }
             if (!hasPlayedDragTutorialDialogue)
             {
