@@ -24,6 +24,7 @@ public class ContextSelector : MonoBehaviour
     [SerializeField] private RectTransform roomUnlockMenu;
     [SerializeField] private RectTransform ratInfoMenu;
     [SerializeField] private RectTransform roomInfoMenu;
+    [SerializeField] private DialogueData ratDragTutorialDialogue;
 
     [Header("Settings")]
     [Tooltip("The offset for the drag highlight. Should be a positive numner between 0 and 5.")]
@@ -42,6 +43,7 @@ public class ContextSelector : MonoBehaviour
     private Vector2 roomUnlockMenuPosition;
     private Vector2 ratInfoMenuPosition;
     private Vector2 roomInfoMenuPosition;
+    private bool hasPlayedDragTutorialDialogue;
 
     // Components
     private GameObject selectedObject;
@@ -183,6 +185,11 @@ public class ContextSelector : MonoBehaviour
             if (ratInfoMenu.TryGetComponent(out RatStatDisplay ratStatDisplay))
             {
                 ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName);
+            }
+            if (!hasPlayedDragTutorialDialogue)
+            {
+                hasPlayedDragTutorialDialogue = true;
+                DialogueWriter.Instance.InitializeDialogue(ratDragTutorialDialogue);
             }
         }
     }
