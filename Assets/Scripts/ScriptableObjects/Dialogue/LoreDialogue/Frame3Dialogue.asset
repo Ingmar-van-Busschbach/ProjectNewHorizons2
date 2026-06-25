@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
-    dialogue: 
+    dialogue: "The humans have lorded over us for far too long. It's time we take
+      them down a peg and show them what we\u2019re worth!"
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019ve devised a plan to make a plague like no other. I call it:
+      the Opus Plague."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
   endScene: 0

@@ -14,7 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
-    dialogue: 
+    dialogue: Doctor, Remi got poisoned up there, can we develop an antidote for
+      this, please. We are being exterminated.
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019m sorry, but Remi is already gone. We can't make such an antidote.
+      What we can have is revenge."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019ve seen rats die more and more of poison, so, I\u2019ve been
+      creating a little something to give them a taste of their own medicine. They
+      fell to the plague once. It will happen again."
+    printDuration: 0.05
+    dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
   endScene: 0

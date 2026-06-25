@@ -10,11 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
-  m_Name: RestingRoom_Tutorial
+  m_Name: LevelStart_Dialogue
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: 
+    dialogue: "Aha! Our colony. Welcome, welcome. It\u2026 erm\u2026 used to bustle
+      with life, but those damned humans-"
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "Right, right\u2026 We seem to have just about enough rats left to
+      keep our bar and trash room running. "
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
   endScene: 0

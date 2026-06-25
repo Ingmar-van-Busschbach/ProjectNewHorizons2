@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
-  m_Name: Storage_Tutorial
+  m_Name: StorageRoom_Tutorial
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: 
+    dialogue: 'Aha! This room should be fairly self-explanatory! '
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "Your resource capacity is getting quite full, and this\u2019ll boost
+      you a little, especially if you drag a few rats to it."
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
   endScene: 0
