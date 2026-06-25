@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
+  m_Name: EducationRoom_Tutorial
+  m_EditorClassIdentifier: 
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: "Oh! The school, that\u2019ll be very important to you in a moment. "
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: 'You can see whether a rat is educated in its Smarts statistics, and
+      we need some proper scientists to develop my Opus Plague further. '
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: 'After some time, the rats you assign here will graduate and receive
+      official permission to work in the lab alongside me. '
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "That is, if a little educational discipline doesn\u2019t deter them,
+      of course\u2026"
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  endScene: 0
