@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
+  m_Name: Start2_TrashRoom_Tutorial
+  m_EditorClassIdentifier: 
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: Marvelous! The trash room is where we scavenge our resources. We find
+      our wood, stone and metal scraps there. Assign a rat to it, and see what happens.
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: You can tap any room to see its information. Oh, and if you tap the
+      trash room, you can select whichever resource you want it to produce. It only
+      produces one at a time though, so choose wisely!
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "The more rats you assign to a room, the more it produces! With the
+      resources, you\u2019ll be able to rebuild and unlock our other rooms. You\u2019ll
+      see me around when you do. Good luck!"
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
+  endScene: 0
