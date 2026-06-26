@@ -181,6 +181,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8480083828792215178, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
   m_PrefabInstance: {fileID: 7847667155757834397}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &3097510909011195015 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5049681361513763866, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+  m_PrefabInstance: {fileID: 7847667155757834397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4182908317118754932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6261181337627119849, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
@@ -198,6 +203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a853f07869f2fc41a7ece8f8c180a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomAmbience: {fileID: 3097510909011195015}
+  roomlight: {fileID: 5526995501470127539}
   characterLocations:
   - {fileID: 6440316472547642643}
   - {fileID: 8244969858176342453}
@@ -218,6 +225,11 @@ MonoBehaviour:
 --- !u!4 &4518173256621697656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5934412870973983461, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+  m_PrefabInstance: {fileID: 7847667155757834397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5526995501470127539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2331552421894763822, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
   m_PrefabInstance: {fileID: 7847667155757834397}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6440316472547642643 stripped

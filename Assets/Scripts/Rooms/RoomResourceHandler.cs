@@ -17,6 +17,14 @@ public class RoomResourceHandler : Room
     [Tooltip("The effectiveness the stats have when at minimum and maximum stat values. Should be a number between 0-1 and 1-2, with both being the same value away from 1.")]
     [SerializeField] private Vector2 statEffectiveness;
 
+    [Header("audio per resource (resource room only)")]
+    public AudioClip woodAudioClip;
+    public AudioClip stoneAudioClip;
+    public AudioClip metalAudioClip;
+
+
+    [HideInInspector] public float currentTime;
+
     private void Start()
     {
         StartCoroutine(ResourceHandler());
