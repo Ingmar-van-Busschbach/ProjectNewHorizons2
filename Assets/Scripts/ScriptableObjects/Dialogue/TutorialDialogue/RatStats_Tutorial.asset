@@ -16,26 +16,26 @@ MonoBehaviour:
   - speakerName: Plague Doctor Rat
     dialogue: "This little pop up is the rat\u2019s individual passport! It\u2019ll
       tell you about them, including their R.A.T.S. statistics. "
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: "Their Resourcefulness will tell you how productive they are, as well
       as their happiness, though\u2026 ah, don\u2019t worry too much about that for
       now. "
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: "The Athletics tell you how likely they\u2019ll survive the outside
       world\u2019s danger, and the Tempo\u2026 makes them whizz around speedily! "
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: "Smarts, that\u2019ll be important once we recover my laboratory. After
       all, I can\u2019t have common rats wreaking havoc among my precious equipment."
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: Either way, go on!
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

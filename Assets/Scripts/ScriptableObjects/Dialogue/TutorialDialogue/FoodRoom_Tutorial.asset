@@ -17,6 +17,6 @@ MonoBehaviour:
     dialogue: "The bar provides our food, that is, as long as someone is working
       there, of course. Be sure to keep it running, as all your rats require food
       every day! Why don\u2019t you drag a rat to it? "
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

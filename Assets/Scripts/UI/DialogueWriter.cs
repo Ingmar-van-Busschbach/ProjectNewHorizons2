@@ -15,7 +15,7 @@ public class DialogueWriter : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float waitTillAutoNextDialogue = 3;
     [SerializeField] private UnityEvent endScene;
-    [SerializeField] private InputActionReference clickInput;
+    //[SerializeField] private InputActionReference clickInput;
     private InputAction interact;
     private DialogueData currentDialogue;
     private AudioSource audioSource;
@@ -41,9 +41,9 @@ public class DialogueWriter : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
-        #if UNITY_WEBGL
-            EnhancedTouchSupport.Enable();
-        #endif
+        //#if UNITY_WEBGL
+        //    EnhancedTouchSupport.Enable();
+        //#endif
     }
 
     private void Start()
@@ -65,30 +65,30 @@ public class DialogueWriter : MonoBehaviour
         WriteDialogue(currentDialogue.dialogue[currentDialogueIndex]);
     }
 
-    private void Update()
-    {
-        if (currentDialogue == null)
-        {
-            return;
-        }
-    #if UNITY_EDITOR
-        if (clickInput.action.WasPressedThisFrame())
-        {
-            NextDialogue();
-        }
-
-    #elif UNITY_WEBGL
-        if (!isPressed && Touch.activeFingers.Count == 1)
-        {            
-            isPressed = true;
-            NextDialogue();
-        }
-        if(Touch.activeFingers.Count == 0)
-        { 
-            isPressed = false; 
-        }
-    #endif
-    }
+    //private void Update()
+    //{
+    //    if (currentDialogue == null)
+    //    {
+    //        return;
+    //    }
+    //#if UNITY_EDITOR
+    //    if (clickInput.action.WasPressedThisFrame())
+    //    {
+    //        NextDialogue();
+    //    }
+    //
+    //#elif UNITY_WEBGL
+    //    if (!isPressed && Touch.activeFingers.Count == 1)
+    //    {            
+    //        isPressed = true;
+    //        NextDialogue();
+    //    }
+    //    if(Touch.activeFingers.Count == 0)
+    //    { 
+    //        isPressed = false; 
+    //    }
+    //#endif
+    //}
 
     private void WriteDialogue(StructLibrary.Struct_DialogueEntry dialogueEntry)
     {
