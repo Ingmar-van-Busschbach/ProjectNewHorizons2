@@ -6,7 +6,7 @@ public class RoomResourceHandler : Room
 {
     [Header("Room Resource Handler")]
     [Tooltip("This doesn't have to be changed")]
-    [SerializeField] private Button collectButton;
+    public Button collectButton;
     public ERoomType roomType;
     [Tooltip("Time in seconds it takes to produce selected resource")]
     public float timeToProduce;
