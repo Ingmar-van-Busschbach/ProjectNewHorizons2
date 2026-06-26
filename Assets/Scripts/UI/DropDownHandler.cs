@@ -10,7 +10,10 @@ public class DropDownHandler : MonoBehaviour
     public void GetDropdownValue()
     {
         int pickedEntry = dropdown.value;
-
+        if (room.collectButton.IsActive())
+        {
+            room.AddResources();
+        }
         switch (pickedEntry) 
         {
             case 0:
