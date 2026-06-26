@@ -15,12 +15,24 @@ public class DropDownHandler : MonoBehaviour
         {
             case 0:
                 room.roomType = ERoomType.ResourceRoomWood;
+                if (room.collectButton.IsActive())
+                {
+                    room.AddResources();
+                }
                 break;
             case 1:
                 room.roomType = ERoomType.ResourceRoomStone;
+                if (room.collectButton.IsActive())
+                {
+                    room.AddResources();
+                }
                 break;
             case 2:
                 room.roomType = ERoomType.ResourceRoomMetal;
+                if (room.collectButton.IsActive())
+                {
+                    room.AddResources();
+                }
                 break;
         }
         room.currentTime = room.timeToProduce;
