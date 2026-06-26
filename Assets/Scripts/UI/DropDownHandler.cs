@@ -10,28 +10,19 @@ public class DropDownHandler : MonoBehaviour
     public void GetDropdownValue()
     {
         int pickedEntry = dropdown.value;
-
+        if (room.collectButton.IsActive())
+        {
+            room.AddResources();
+        }
         switch (pickedEntry) 
         {
             case 0:
-                if (room.collectButton.IsActive())
-                {
-                    room.AddResources();
-                }
                 room.roomType = ERoomType.ResourceRoomWood;
                 break;
             case 1:
-                if (room.collectButton.IsActive())
-                {
-                    room.AddResources();
-                }
                 room.roomType = ERoomType.ResourceRoomStone;
                 break;
             case 2:
-                if (room.collectButton.IsActive())
-                {
-                    room.AddResources();
-                }
                 room.roomType = ERoomType.ResourceRoomMetal;
                 break;
         }
