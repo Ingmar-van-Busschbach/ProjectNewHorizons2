@@ -16,17 +16,17 @@ MonoBehaviour:
   - speakerName: Plague Doctor Rat
     dialogue: 'Wonderful! That, my friend, is the living room. Have you noticed the
       happiness in the R.A.T.S. statistics? '
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: For every rat, their happiness slowly drains over time. If they feel
       too down, the rats will produce slower.
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: With some time in the living room, their happiness will slowly build
       up again. If you keep the spirits high, they might even produce double! So,
       be sure to switch out your rats over time.
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

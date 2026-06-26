@@ -188,6 +188,9 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 104
+  draggingLayerMask:
+    serializedVersion: 2
+    m_Bits: 65
   draggedObjectPrefab: {fileID: 8325694758835055321, guid: 625167c9094e255489d8ad53dab69bcd, type: 3}
   bottomLeftBounds: {fileID: 5792804884207744616}
   topRightBounds: {fileID: 5732855943325558644}
@@ -201,6 +204,8 @@ MonoBehaviour:
   touchZoomSpeed: 0.01
   mouseZoomSpeed: 0.5
   menuAnimationSpeed: 1
+  autoPanEdgeWidth: 100
+  autoPanSpeed: 6
 --- !u!1 &5253339291096677594
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.LightTransport;
 using UnityEngine.UI;
 
 public class ResourceManager : MonoBehaviour

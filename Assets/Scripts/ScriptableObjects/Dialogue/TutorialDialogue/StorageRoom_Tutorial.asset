@@ -15,11 +15,11 @@ MonoBehaviour:
   dialogue:
   - speakerName: Plague Doctor Rat
     dialogue: 'Aha! This room should be fairly self-explanatory! '
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: "Your resource capacity is getting quite full, and this\u2019ll boost
       you a little, especially if you drag a few rats to it."
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0
