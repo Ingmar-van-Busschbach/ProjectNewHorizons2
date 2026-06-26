@@ -22,9 +22,6 @@ public class RoomResourceHandler : Room
     public AudioClip stoneAudioClip;
     public AudioClip metalAudioClip;
 
-
-    [HideInInspector] public float currentTime;
-
     private void Start()
     {
         StartCoroutine(ResourceHandler());

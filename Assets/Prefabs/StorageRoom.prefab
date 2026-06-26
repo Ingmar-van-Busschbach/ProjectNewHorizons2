@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1069241902421526566, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
       propertyPath: m_Name
-      value: Room Variant
+      value: StorageRoom
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6435894610388345562, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
@@ -61,6 +61,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2568985159315493705}
   m_SourcePrefab: {fileID: 100100000, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+--- !u!1 &2020095291350758419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8676690507295927777, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+  m_PrefabInstance: {fileID: 7233095450944215538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7689799766310015444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1069241902421526566, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
@@ -78,6 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9c68b048ae3fd40b7676f1be2883a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomAmbience: {fileID: 8811175110492542247}
+  roomlight: {fileID: 2020095291350758419}
   characterLocations: []
   unlockedRoom: 0
   roomName: 
@@ -86,6 +93,14 @@ MonoBehaviour:
   metalToUnlock: 0
   ratHat: {fileID: 0}
   unlockDialogue: {fileID: 0}
+  collectButton: {fileID: 0}
+  timeToProduce: 0
+  currentTime: 0
   additionalNutrition: 15
   additionalBuildingResources: 15
   additionalPlagueVials: 5
+--- !u!82 &8811175110492542247 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2172574405210524885, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+  m_PrefabInstance: {fileID: 7233095450944215538}
+  m_PrefabAsset: {fileID: 0}
