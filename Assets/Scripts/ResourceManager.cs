@@ -11,13 +11,15 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private float dayCycleTime = 1;
 
     [Header("resources")]
-    [SerializeField] private int rats = 2;
+    [SerializeField] private int ratCount = 2;
 
     [Tooltip("Amount of nutrition rats start with")]
     [SerializeField] private int NutritionStarter = 100;
 
     [Tooltip("amount nutrition drained per rat per day")]
     [SerializeField] private int nutritionDrain;
+    [SerializeField] private int resourcefulnessDrain = 1;
+    [SerializeField] private StatPlugs statPlug;
 
     [Header("UI")]
     [SerializeField] TMP_Text ratCounter;
@@ -63,9 +65,17 @@ public class ResourceManager : MonoBehaviour
     public IEnumerator DayCycle()
     {
         yield return new WaitForSeconds(dayCycleTime);
-        nutrition -= nutritionDrain * rats;
+        nutrition -= nutritionDrain * ratCount;
         nutritionCounter.text = nutrition.ToString();
-        if (nutrition < 0 || rats < 0)
+        Character[] rats = FindObjectsByType<Character>(FindObjectsSortMode.InstanceID);
+        Stat stat = new Stat();
+        stat.recourcefulness = -resourcefulnessDrain;
+        foreach(Character rat in rats)
+        {
+            rat.stats.Add(stat);
+            rat.stats.ClampToMaxStats(statPlug.MaxStats());
+        }
+        if (nutrition < 0 || ratCount < 0)
         {
             Debug.Log("oops you failed");
         }
@@ -78,8 +88,8 @@ public class ResourceManager : MonoBehaviour
         switch (resource)
         {
             case EResourceType.Rats:
-                rats += amount;
-                ratCounter.text = rats.ToString();
+                ratCount += amount;
+                ratCounter.text = ratCount.ToString();
                 break;
             case EResourceType.Nutrition:
                 nutrition += amount;

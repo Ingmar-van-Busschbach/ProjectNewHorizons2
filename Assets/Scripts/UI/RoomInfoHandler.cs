@@ -65,8 +65,8 @@ public class RoomInfoHandler : MonoBehaviour
     {
         if(roomResourceHandler != null)
         {
-            progressBar.maxValue = roomResourceHandler.timeToProduce;
-            progressBar.value = roomResourceHandler.timeToProduce - roomResourceHandler.currentTime;
+            progressBar.maxValue = currentRoom.timeToProduce;
+            progressBar.value = currentRoom.timeToProduce - currentRoom.currentTime;
         }  
     }
 }

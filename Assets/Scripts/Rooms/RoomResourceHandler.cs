@@ -5,11 +5,8 @@ using UnityEngine.UI;
 public class RoomResourceHandler : Room
 {
     [Header("Room Resource Handler")]
-    [Tooltip("This doesn't have to be changed")]
-    public Button collectButton;
     public ERoomType roomType;
-    [Tooltip("Time in seconds it takes to produce selected resource")]
-    public float timeToProduce;
+    
     [Header("Amount to produce per resource")]
     public int nutritionAmount;
     public int woodAmount;
