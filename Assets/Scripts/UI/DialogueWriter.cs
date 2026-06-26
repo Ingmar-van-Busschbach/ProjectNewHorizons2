@@ -13,7 +13,7 @@ public class DialogueWriter : MonoBehaviour
     public static DialogueWriter Instance { get; private set; }
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private float waitTillAutoNextDialogue = 3;
+    [SerializeField] private float waitTillAutoNextDialogue = 4;
     [SerializeField] private UnityEvent endScene;
     //[SerializeField] private InputActionReference clickInput;
     private InputAction interact;
@@ -124,14 +124,7 @@ public class DialogueWriter : MonoBehaviour
 
     private IEnumerator PrintText(StructLibrary.Struct_DialogueEntry dialogueEntry)
     {
-        char[] letters = dialogueEntry.dialogue.ToCharArray();
-        string displayText = "";
-        foreach(char letter in letters)
-        {
-            yield return new WaitForSeconds(dialogueEntry.printDuration);
-            displayText += letter;
-            dialogueText.text = displayText;
-        }
+        dialogueText.text = dialogueEntry.dialogue;
         yield return new WaitForSeconds(waitTillAutoNextDialogue);
         NextDialogue();
     }
