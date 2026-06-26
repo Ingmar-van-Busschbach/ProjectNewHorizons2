@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Room : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class Room : MonoBehaviour
     public Sprite ratHat;
     [Tooltip("Dialogue that plays when the room is unlocked")]
     public DialogueData unlockDialogue;
+    [Tooltip("This doesn't have to be changed")]
+    public Button collectButton;
+    [Tooltip("Time in seconds it takes to produce selected resource")]
+    public float timeToProduce;
+    [HideInInspector] public float currentTime;
 
     public virtual Transform AssignCharacter(Character character)
     {

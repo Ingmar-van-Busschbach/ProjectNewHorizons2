@@ -5,11 +5,8 @@ using UnityEngine.UI;
 public class RoomResourceHandler : Room
 {
     [Header("Room Resource Handler")]
-    [Tooltip("This doesn't have to be changed")]
-    public Button collectButton;
     public ERoomType roomType;
-    [Tooltip("Time in seconds it takes to produce selected resource")]
-    public float timeToProduce;
+    
     [Header("Amount to produce per resource")]
     public int nutritionAmount;
     public int woodAmount;
@@ -19,9 +16,6 @@ public class RoomResourceHandler : Room
     public bool canSwitchResourceTypes;
     [Tooltip("The effectiveness the stats have when at minimum and maximum stat values. Should be a number between 0-1 and 1-2, with both being the same value away from 1.")]
     [SerializeField] private Vector2 statEffectiveness;
-    
-
-    [HideInInspector] public float currentTime;
 
     private void Start()
     {
