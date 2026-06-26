@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
+    public AudioSource roomAmbience;
+    [SerializeField] private GameObject roomlight;
     [SerializeField] protected List<Transform> characterLocations = new();
     [SerializeField] protected Dictionary<Character, int> characterIndex = new();
     public bool unlockedRoom;
@@ -15,6 +17,19 @@ public class Room : MonoBehaviour
     [Tooltip("Dialogue that plays when the room is unlocked")]
     public DialogueData unlockDialogue;
 
+    private void Update()
+    {
+        if (characterIndex.Count > 0)
+        {
+            roomAmbience.gameObject.SetActive(true);
+            roomlight.SetActive(true);
+        }
+        else
+        {
+            roomAmbience.gameObject.SetActive(false);
+            roomlight.SetActive(false);
+        }
+    }
     public virtual Transform AssignCharacter(Character character)
     {
         if (unlockedRoom)
