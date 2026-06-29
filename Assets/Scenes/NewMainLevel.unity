@@ -1164,6 +1164,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.82
       objectReference: {fileID: 0}
+    - target: {fileID: 1622237447367442060, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622237447367442060, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.91
+      objectReference: {fileID: 0}
     - target: {fileID: 4605941096675882545, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.63
@@ -1223,6 +1231,22 @@ PrefabInstance:
     - target: {fileID: 7261049956075408292, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393986677015846784, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393986677015846784, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.61960787
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393986677015846784, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_Color.g
+      value: 0.97331226
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393986677015846784, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9208948989573094709, guid: 4ea3852d2a748994aaddb7f7b3e07bbf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18690,6 +18714,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 428939150}
     m_Modifications:
+    - target: {fileID: 6677362660975778, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677362660975778, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677362660975778, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677362660975778, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.30951285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677362660975778, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4182908317118754932, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
       propertyPath: m_Name
       value: PlagueSpreadRoom
@@ -18733,6 +18777,10 @@ PrefabInstance:
     - target: {fileID: 4518173256621697656, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072797914669090222, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.628
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
