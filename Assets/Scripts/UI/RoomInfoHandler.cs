@@ -9,6 +9,7 @@ public class RoomInfoHandler : MonoBehaviour
     [SerializeField] private TMP_Text roomNameText;
     [SerializeField] private Slider progressBar;
     [SerializeField] private TMP_Text produceAmountText;
+    [SerializeField] private TMP_Text ratCount;
     private DropDownHandler dropDownHandler;
 
     private Room currentRoom;
@@ -67,6 +68,10 @@ public class RoomInfoHandler : MonoBehaviour
         {
             progressBar.maxValue = currentRoom.timeToProduce;
             progressBar.value = currentRoom.timeToProduce - currentRoom.currentTime;
-        }  
+        }
+        if(currentRoom != null)
+        {
+            ratCount.text = currentRoom.characterIndex.Count.ToString() + "/" + currentRoom.characterLocations.Count.ToString();
+        }
     }
 }
