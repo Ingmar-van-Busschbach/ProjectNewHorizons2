@@ -129,6 +129,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2259522574119403309}
     m_Modifications:
+    - target: {fileID: 2080897625421227315, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080897625421227315, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331552421894763822, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4231335830192347951, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
       propertyPath: ratHat
       value: 
@@ -233,8 +245,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResourceRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 7854060827090060351, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854060827090060351, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8442584
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854060827090060351, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854060827090060351, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_Intensity
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7973591762952130587, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961339148492103335, guid: 413f901370fc68e41ae385d3bc3a9cd6, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
