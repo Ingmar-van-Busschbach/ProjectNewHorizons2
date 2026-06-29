@@ -502,8 +502,9 @@ MonoBehaviour:
   ratHat: {fileID: 0}
   unlockDialogue: {fileID: 0}
   collectButton: {fileID: 7958190701420210354}
-  roomType: 0
   timeToProduce: 0
+  currentTime: 0
+  roomType: 0
   nutritionAmount: 0
   woodAmount: 0
   stoneAmount: 0
@@ -514,7 +515,11 @@ MonoBehaviour:
   woodAudioClip: {fileID: 8300000, guid: 70764e22168d51740bc7dcbad76923e9, type: 3}
   stoneAudioClip: {fileID: 8300000, guid: f70b17da810d238498ccb44a05081b89, type: 3}
   metalAudioClip: {fileID: 8300000, guid: e1b49837f1277a7469bf1b59e11bccee, type: 3}
-  currentTime: 0
+  woodSprite: {fileID: 21300000, guid: eb7fbd5d22ee53f48ab016f0e4fcd441, type: 3}
+  stoneSprite: {fileID: 21300000, guid: 89c06fa4f4856fd47bb223c30a176b4c, type: 3}
+  metalSprite: {fileID: 21300000, guid: d00519d07962ac544a8542ddfc9945e6, type: 3}
+  nutritionSprite: {fileID: 21300000, guid: ab90af1c84688bd4499693090a6f3cd9, type: 3}
+  vialSprite: {fileID: 21300000, guid: 3952a83c6936e204b82199cc94ac4d17, type: 3}
 --- !u!4 &8480083828792215178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3287018360636464709, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
