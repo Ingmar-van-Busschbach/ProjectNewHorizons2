@@ -34,7 +34,6 @@ public class RatVisit : MonoBehaviour
                 assignedRats += room.characterIndex.Count;
             }
         }
-        Debug.Log(assignedRats + " " + maxRats);
         // -4 to ignore the plague spreading room, and leave 1 open spot.
         if(assignedRats < maxRats - 4)
         {
@@ -53,7 +52,7 @@ public class RatVisit : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(10f);
             StartCoroutine(RatVisitor());
         }
         
