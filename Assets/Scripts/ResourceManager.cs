@@ -128,7 +128,7 @@ public class ResourceManager : MonoBehaviour
             case EResourceType.Plague:
                 plague += amount;
                 plagueSlider.value = plague;
-                if (plague >= 1)
+                if (plague >= 100)
                 {
                     SceneManager.LoadScene("SuccessScreen");
                 }
