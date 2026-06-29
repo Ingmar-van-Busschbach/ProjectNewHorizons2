@@ -37,6 +37,9 @@ public class UnlockMenuHandler : MonoBehaviour
     {
         if (CheckResourceCount())
         {
+            ResourceManager.instance.wood -= currentRoomToUnlock.woodToUnlock;
+            ResourceManager.instance.stone -= currentRoomToUnlock.stoneToUnlock;
+            ResourceManager.instance.metal -= currentRoomToUnlock.metalToUnlock;
             currentRoomToUnlock.unlockedRoom = true;
             contextSelector.AnimateRoomUnlockMenu(false);
         }
