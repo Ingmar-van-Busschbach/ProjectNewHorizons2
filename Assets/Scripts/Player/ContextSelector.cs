@@ -55,7 +55,6 @@ public class ContextSelector : MonoBehaviour
     private Coroutine roomUnlockMenuAnimation;
     private Coroutine ratInfoMenuAnimation;
     private Coroutine roomInfoMenuAnimation;
-    private PointerEventData pointerEventData;
 
 #if UNITY_WEBGL
     private void Awake()
@@ -73,8 +72,11 @@ public class ContextSelector : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
         Vector2 mousePosition = pointerPositionInput.action.ReadValue<Vector2>();
-
         #if UNITY_EDITOR
         // On click/touch start
         if (clickInput.action.WasPressedThisFrame())
