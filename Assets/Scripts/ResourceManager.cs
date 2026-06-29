@@ -22,13 +22,14 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private StatPlugs statPlug;
 
     [Header("UI")]
-    [SerializeField] TMP_Text ratCounter;
-    [SerializeField] TMP_Text nutritionCounter;
-    [SerializeField] TMP_Text woodCounter;
-    [SerializeField] TMP_Text stoneCounter;
-    [SerializeField] TMP_Text metalCounter;
-    [SerializeField] Slider plagueSlider;
-    [SerializeField] TMP_Text PlagueVialCounter;
+    [SerializeField] private Slider dayCycleProgress;
+    [SerializeField] private TMP_Text ratCounter;
+    [SerializeField] private TMP_Text nutritionCounter;
+    [SerializeField] private TMP_Text woodCounter;
+    [SerializeField] private TMP_Text stoneCounter;
+    [SerializeField] private TMP_Text metalCounter;
+    [SerializeField] private Slider plagueSlider;
+    [SerializeField] private TMP_Text PlagueVialCounter;
 
     [Header("Storage")]
     [Tooltip("max storage per item without any storage room")]
@@ -44,6 +45,7 @@ public class ResourceManager : MonoBehaviour
     [HideInInspector] public int plague;
     [HideInInspector] public int plagueVials;
 
+    private float currentTime;
     private void Awake()
     {
         if (instance == null)
@@ -64,7 +66,12 @@ public class ResourceManager : MonoBehaviour
 
     public IEnumerator DayCycle()
     {
-        yield return new WaitForSeconds(dayCycleTime);
+        currentTime = dayCycleTime;
+        while (currentTime > 0)
+        {
+            currentTime -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
         nutrition -= nutritionDrain * ratCount;
         nutritionCounter.text = nutrition.ToString();
         Character[] rats = FindObjectsByType<Character>(FindObjectsSortMode.InstanceID);
@@ -82,6 +89,12 @@ public class ResourceManager : MonoBehaviour
 
         Debug.Log("ending day...");
         StartCoroutine(DayCycle());
+        
+    }
+    private void Update()
+    {
+        dayCycleProgress.maxValue = dayCycleTime;
+        dayCycleProgress.value = dayCycleTime - currentTime;
     }
     public void ResourceHandler(EResourceType resource, int amount)
     {
