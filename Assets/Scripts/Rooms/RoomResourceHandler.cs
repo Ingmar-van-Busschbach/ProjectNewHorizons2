@@ -22,6 +22,12 @@ public class RoomResourceHandler : Room
     public AudioClip stoneAudioClip;
     public AudioClip metalAudioClip;
 
+    public Sprite woodSprite;
+    public Sprite stoneSprite;
+    public Sprite metalSprite;
+    public Sprite nutritionSprite;
+    public Sprite vialSprite;
+
     private void Start()
     {
         StartCoroutine(ResourceHandler());
