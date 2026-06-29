@@ -9489,8 +9489,20 @@ PrefabInstance:
       value: Classroom
       objectReference: {fileID: 0}
     - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: woodToUnlock
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: metalToUnlock
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
       propertyPath: statToImprove
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: stoneToUnlock
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
       propertyPath: unlockDialogue
@@ -12812,7 +12824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
       propertyPath: metalToUnlock
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
       propertyPath: stoneToUnlock
@@ -19246,11 +19258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: metalToUnlock
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: stoneToUnlock
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: stoneAudioClip
@@ -23075,6 +23087,18 @@ PrefabInstance:
     - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
       propertyPath: unlockedRoom
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: woodToUnlock
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: metalToUnlock
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
+      propertyPath: stoneToUnlock
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5250558210883483518, guid: 972c1ee8356ffc7449d4427aa8bea3c0, type: 3}
       propertyPath: unlockDialogue
