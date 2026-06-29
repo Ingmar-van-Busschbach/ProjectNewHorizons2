@@ -8,6 +8,7 @@ public class RatVisit : MonoBehaviour
     [Tooltip("spawnPosition should be just outside of screen so it seems the rat walks to colony")]
     [SerializeField] private Transform spawnPosition;
     [SerializeField] private Room room;
+    [SerializeField] int count;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +18,9 @@ public class RatVisit : MonoBehaviour
 
     IEnumerator RatVisitor()
     {
+        count++;
         Character spawnedRat = Instantiate(ratPrefab, spawnPosition.position, transform.rotation);
+        spawnedRat.gameObject.name = "Rat " + count;
         Transform roomLocation = room.AssignCharacter(spawnedRat);
         if (roomLocation == spawnedRat.gameObject.transform) { Destroy(spawnedRat.gameObject); }
         else

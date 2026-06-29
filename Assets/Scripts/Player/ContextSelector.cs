@@ -17,6 +17,7 @@ public class ContextSelector : MonoBehaviour
 
     [Header("Core Configuration - Do not touch")]
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private LayerMask draggingLayerMask;
     [SerializeField] private SpriteRenderer draggedObjectPrefab;
     [SerializeField] private Transform bottomLeftBounds;
     [SerializeField] private Transform topRightBounds;
@@ -34,6 +35,8 @@ public class ContextSelector : MonoBehaviour
     [SerializeField] private float touchZoomSpeed = 0.01f;
     [SerializeField] private float mouseZoomSpeed = 0.5f;
     [SerializeField] private float menuAnimationSpeed = 0.5f;
+    [SerializeField] private float autoPanEdgeWidth = 150;
+    [SerializeField] private float autoPanSpeed = 6;
 
     // Internal Parameters
     private ESelectionType selectionType;
@@ -155,6 +158,7 @@ public class ContextSelector : MonoBehaviour
         {
             if (selectionType == ESelectionType.Character)
             {
+                PanCamera(mousePosition);
                 DragCharacter(mousePosition, rayHitDistance);
             }
             else
@@ -184,7 +188,7 @@ public class ContextSelector : MonoBehaviour
             AnimateRoomInfoMenu(false);
             if (ratInfoMenu.TryGetComponent(out RatStatDisplay ratStatDisplay))
             {
-                ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName);
+                ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName, character);
             }
             if (!hasPlayedDragTutorialDialogue)
             {
@@ -296,6 +300,41 @@ public class ContextSelector : MonoBehaviour
         }
     }
 
+    private void PanCamera(Vector2 mousePosition)
+    {
+        if (mousePosition.x < autoPanEdgeWidth)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x - (autoPanSpeed * Time.deltaTime), bottomLeftBounds.position.x, topRightBounds.position.x),
+                transform.position.y,
+                transform.position.z
+                );
+        }
+        else if (mousePosition.x > Screen.width - autoPanEdgeWidth)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x + (autoPanSpeed * Time.deltaTime), bottomLeftBounds.position.x, topRightBounds.position.x),
+                transform.position.y,
+                transform.position.z
+                );
+        }
+        if (mousePosition.y < autoPanEdgeWidth)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                Mathf.Clamp(transform.position.y - (autoPanSpeed * Time.deltaTime), bottomLeftBounds.position.y, topRightBounds.position.y),
+                transform.position.z
+                );
+        }
+        else if (mousePosition.y > Screen.height - autoPanEdgeWidth)
+        {
+            transform.position = new Vector3(
+                transform.position.x,
+                Mathf.Clamp(transform.position.y + (autoPanSpeed * Time.deltaTime), bottomLeftBounds.position.y, topRightBounds.position.y),
+                transform.position.z
+                );
+        }
+    }
     private void DragCharacter(Vector2 mousePosition, float distance)
     {
         Vector3 location = playerCamera.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, distance));
@@ -305,7 +344,7 @@ public class ContextSelector : MonoBehaviour
         }
         Ray ray = playerCamera.ScreenPointToRay(mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, draggingLayerMask))
         {
             rayHitDistance = hit.distance - dragDistanceOffset;
         }
@@ -314,7 +353,6 @@ public class ContextSelector : MonoBehaviour
     private void StartDraggingCharacter(Vector3 location)
     {
         draggedObject = Instantiate(draggedObjectPrefab, location, Quaternion.identity);
-        //draggedObject.flipX = Vector3.Dot(selectedObject.transform.right, Vector3.right) < 0;
     }
     private void ReleaseCharacter(Vector2 mousePosition)
     {

@@ -40,7 +40,10 @@ public class UnlockMenuHandler : MonoBehaviour
             currentRoomToUnlock.unlockedRoom = true;
             contextSelector.AnimateRoomUnlockMenu(false);
         }
-
+        if (currentRoomToUnlock.gameObject.TryGetComponent(out RoomStorageHandler storageHandler))
+        {
+            storageHandler.storageUpgrade();
+        }
         DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
     }
 }

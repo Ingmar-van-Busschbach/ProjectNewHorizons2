@@ -208,6 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleRotationSpeed: 5
+  spriteRenderer: {fileID: 7266800931795010499}
+  infectedSprite: {fileID: 21300000, guid: 98884a81fe7e9d946a94baa47aac8d00, type: 3}
   statPlugs: {fileID: 11400000, guid: b0863446f928c824da1cc0249c7e7a03, type: 2}
   stats:
     recourcefulness: 0
@@ -216,6 +218,7 @@ MonoBehaviour:
     smarts: 0
   names: {fileID: 11400000, guid: e263ad6be49ca584bafb1ca03303b6e5, type: 2}
   isInfected: 0
+  ratName: 
   currentRoom: {fileID: 0}
 --- !u!65 &7122343822052281349
 BoxCollider:

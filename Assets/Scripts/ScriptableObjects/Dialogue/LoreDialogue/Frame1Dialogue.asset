@@ -15,11 +15,11 @@ MonoBehaviour:
   dialogue:
   - speakerName: Father Rat
     dialogue: Who did this to you?
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Remi
     dialogue: The humans, the cheese they laid out, it looked so succulent, so I
       took a bite. They poisoned the cheese; they want us gone.
-    printDuration: 0.05
+    printDuration: 0.02
     dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
   endScene: 0

@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Room : MonoBehaviour
 {
+    public AudioSource roomAmbience;
+    [SerializeField] private GameObject roomlight;
     [SerializeField] protected List<Transform> characterLocations = new();
     [SerializeField] protected Dictionary<Character, int> characterIndex = new();
     public bool unlockedRoom;
@@ -14,7 +17,25 @@ public class Room : MonoBehaviour
     public Sprite ratHat;
     [Tooltip("Dialogue that plays when the room is unlocked")]
     public DialogueData unlockDialogue;
+    [Tooltip("This doesn't have to be changed")]
+    public Button collectButton;
+    [Tooltip("Time in seconds it takes to produce selected resource")]
+    public float timeToProduce;
+    [HideInInspector] public float currentTime;
 
+    private void Update()
+    {
+        if (characterIndex.Count > 0)
+        {
+            roomAmbience.gameObject.SetActive(true);
+            roomlight.SetActive(true);
+        }
+        else
+        {
+            roomAmbience.gameObject.SetActive(false);
+            roomlight.SetActive(false);
+        }
+    }
     public virtual Transform AssignCharacter(Character character)
     {
         if (unlockedRoom)
