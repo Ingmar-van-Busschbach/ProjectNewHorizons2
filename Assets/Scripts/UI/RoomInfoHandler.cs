@@ -9,6 +9,7 @@ public class RoomInfoHandler : MonoBehaviour
     [SerializeField] private TMP_Text roomNameText;
     [SerializeField] private Slider progressBar;
     [SerializeField] private TMP_Text produceAmountText;
+    [SerializeField] private Image produceImage;
     [SerializeField] private TMP_Text ratCount;
     private DropDownHandler dropDownHandler;
 
@@ -45,18 +46,23 @@ public class RoomInfoHandler : MonoBehaviour
             {
                 case ERoomType.NutritionRoom:
                     produceAmountText.text = roomResourceHandler.nutritionAmount.ToString();
+                    produceImage.sprite = roomResourceHandler.nutritionSprite;
                     break;
                 case ERoomType.ResourceRoomWood:
                     produceAmountText.text = roomResourceHandler.woodAmount.ToString();
+                    produceImage.sprite = roomResourceHandler.woodSprite;
                     break;
                 case ERoomType.ResourceRoomStone:
                     produceAmountText.text = roomResourceHandler.stoneAmount.ToString();
+                    produceImage.sprite = roomResourceHandler.stoneSprite;
                     break;
                 case ERoomType.ResourceRoomMetal:
                     produceAmountText.text = roomResourceHandler.metalAmount.ToString();
+                    produceImage.sprite = roomResourceHandler.metalSprite;
                     break;
                 case ERoomType.ResearchRoom:
                     produceAmountText.text = roomResourceHandler.plagueVialAmount.ToString();
+                    produceImage.sprite = roomResourceHandler.vialSprite;
                     break;
             }
         }
