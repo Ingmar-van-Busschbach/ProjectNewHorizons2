@@ -21,9 +21,9 @@ MonoBehaviour:
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: "Right, right, whenever you have a vial available, select a rat to
-      see their passport. There will be a button available to infect them. They\u2019ll
-      leave the colony, carrying the plague, and fight for our right to live above
-      the surface!"
+      see their passport. There will be a button available to infect them. Then,
+      drag them to the sewer pipe to the left! They\u2019ll leave the colony, carrying
+      the plague, and fight for our right to live above the surface!"
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
