@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ResourceManager : MonoBehaviour
@@ -84,7 +85,7 @@ public class ResourceManager : MonoBehaviour
         }
         if (nutrition < 0 || ratCount < 0)
         {
-            Debug.Log("oops you failed");
+            SceneManager.LoadScene("DeathScene");
         }
 
         Debug.Log("ending day...");
@@ -126,7 +127,11 @@ public class ResourceManager : MonoBehaviour
                 break;
             case EResourceType.Plague:
                 plague += amount;
-                plagueSlider.value = plague; 
+                plagueSlider.value = plague;
+                if (plague >= 1)
+                {
+                    SceneManager.LoadScene("SuccessScreen");
+                }
                 break;
             case EResourceType.PlagueVials:
                 plagueVials += amount;
