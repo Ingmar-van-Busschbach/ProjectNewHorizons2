@@ -12806,6 +12806,18 @@ PrefabInstance:
       propertyPath: unlockedRoom
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: woodToUnlock
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: metalToUnlock
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412811629975199913, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
+      propertyPath: stoneToUnlock
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8561891467908242212, guid: a3ab570a7d653ae438945ad139812c85, type: 3}
       propertyPath: m_Name
       value: Food_Room2
@@ -19227,6 +19239,18 @@ PrefabInstance:
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: unlockedRoom
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: woodToUnlock
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: metalToUnlock
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
+      propertyPath: stoneToUnlock
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5667792519034690716, guid: 6c90ad1bc28d2fe40b53048f6120dc6e, type: 3}
       propertyPath: stoneAudioClip
