@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 708820864860661811}
   - component: {fileID: 7371755471709499630}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ProductionImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1821692742821806185, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: -0.00002670288
       objectReference: {fileID: 0}
     - target: {fileID: 2220749601698907121, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
       propertyPath: m_Size
@@ -829,7 +829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2220749601698907121, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2963364540916953869, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -923,6 +923,10 @@ PrefabInstance:
       propertyPath: ratCount
       value: 
       objectReference: {fileID: 256625229738104428}
+    - target: {fileID: 5912909487844930537, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
+      propertyPath: produceImage
+      value: 
+      objectReference: {fileID: 7371755471709499630}
     - target: {fileID: 6074795875527100863, guid: 3a586d623ea15ca4a849651c8d31174c, type: 3}
       propertyPath: m_fontSize
       value: 48
