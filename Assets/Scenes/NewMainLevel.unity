@@ -1855,6 +1855,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7864009594495387993, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a33147bd5768f9d469c49c84090b1fa9, type: 3}
     - target: {fileID: 8193394248422390430, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: m_Name
       value: UI canvas
@@ -22327,7 +22331,7 @@ PrefabInstance:
     - target: {fileID: 6878218884691005739, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3952a83c6936e204b82199cc94ac4d17, type: 3}
+      objectReference: {fileID: 21300000, guid: a33147bd5768f9d469c49c84090b1fa9, type: 3}
     - target: {fileID: 7009245611363044934, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
