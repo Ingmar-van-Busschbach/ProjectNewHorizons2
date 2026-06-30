@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,11 +30,24 @@ public class RoomInfoHandler : MonoBehaviour
             roomResourceHandler = resourceRoom;
             dropDownHandler.room = resourceRoom;
             dropDownHandler.dropdown.gameObject.SetActive(resourceRoom.canSwitchResourceTypes);
+            switch (resourceRoom.roomType)
+            {
+                case ERoomType.ResourceRoomWood:
+                    dropDownHandler.dropdown.value = 0;
+                    break;
+                case ERoomType.ResourceRoomStone:
+                    dropDownHandler.dropdown.value = 1;
+                    break;
+                case ERoomType.ResourceRoomMetal:
+                    dropDownHandler.dropdown.value = 2;
+                    break;
+            }
+            
             UpdateProductionAmountDisplay();
         }
         else
         {
-            dropDownHandler.dropdown.gameObject.SetActive(true);
+            dropDownHandler.dropdown.gameObject.SetActive(false);
         }
         roomNameText.text = room.roomName;
     }
