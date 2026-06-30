@@ -19,9 +19,8 @@ MonoBehaviour:
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: "Their Resourcefulness will tell you how productive they are, as well
-      as their happiness, though\u2026 ah, don\u2019t worry too much about that for
-      now. "
+    dialogue: "Their Resourcefulness will tell you how productive they are, though\u2026
+      ah, don\u2019t worry too much about that for now. "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
