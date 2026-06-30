@@ -52,6 +52,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaitingRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Size.x
+      value: 5.7433352
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3660393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Size.z
+      value: 0.8270712
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Center.x
+      value: 0.14921975
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Center.y
+      value: 1.1830196
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544700657189502825, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Center.z
+      value: -2.4702587
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933183916544067796, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5637909437798523146, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}

@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoreScene.unity
     guid: 0b36d3eb9156605498e129a0cfe6620c
+  - enabled: 0
+    path: Assets/Scenes/StorageTestScene.unity
+    guid: cdc47aee8d6f8584db56a07f2f3ca82b
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 17b47a5403d6fb946985864c00d2096d
+  - enabled: 1
+    path: Assets/Scenes/SuccessScreen.unity
+    guid: 69e3b9cf1a452294ea5a80ad70d13957
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -26,8 +26,6 @@ public class RatStatDisplay : MonoBehaviour
         smarts.maxValue = maxStats.smarts;
 
         ratNameText.text = ratName;
-
-        infectButton.gameObject.SetActive(ResourceManager.instance.plagueVials > 0);
     }
 
     public void Infect()
@@ -38,5 +36,14 @@ public class RatStatDisplay : MonoBehaviour
             ResourceManager.instance.ResourceHandler(EResourceType.PlagueVials, -1);
         }
         infectButton.gameObject.SetActive(ResourceManager.instance.plagueVials > 0);
+    }
+
+    public void Update()
+    {
+        if(character != null)
+        {
+            infectButton.gameObject.SetActive(ResourceManager.instance.plagueVials > 0 && !character.isInfected);
+        }
+        
     }
 }
