@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2087664504}
   dialogueText: {fileID: 1838787875}
-  waitTillAutoNextDialogue: 6
+  waitTillAutoNextDialogue: 10
   endScene:
     m_PersistentCalls:
       m_Calls: []
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -424.57355, y: 0, z: -418.52393, w: 141.03552}
+  m_margin: {x: -356.53882, y: 0, z: -410.43335, w: 141.03552}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
