@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Father Rat
-    dialogue: Doctor, Remi got poisoned up there, can we develop an antidote for
-      this, please. We are being exterminated.
+    dialogue: Doctor, Remi got poisoned up there, I saw it in the paper. Can we develop
+      an antidote for this, please. We are being exterminated.
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
