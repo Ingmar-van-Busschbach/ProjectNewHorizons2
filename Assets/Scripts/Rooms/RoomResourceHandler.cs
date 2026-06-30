@@ -42,10 +42,20 @@ public class RoomResourceHandler : Room
             if(characterIndex.Count > 0)
             {
                 float averageStat = 0;
-                foreach (Character character in characterIndex.Keys)
+                if(roomType == ERoomType.ResearchRoom)
                 {
-                    averageStat += character.GetRecourcefulness();
+                    foreach (Character character in characterIndex.Keys)
+                    {
+                        averageStat += character.GetSmarts();
+                    }
                 }
+                else
+                {
+                    foreach (Character character in characterIndex.Keys)
+                    {
+                        averageStat += character.GetRecourcefulness();
+                    }
+                }  
                 if (characterIndex.Count > 0)
                 {
                     averageStat = averageStat / characterIndex.Count;
@@ -56,6 +66,27 @@ public class RoomResourceHandler : Room
                 }
                 averageStat = RemapFloat(averageStat, new Vector2(0, 2), statEffectiveness);
                 currentTime -= 0.1f * averageStat;
+            }
+        }
+        if (canSwitchResourceTypes)
+        {
+            switch (roomType)
+            {
+                case ERoomType.NutritionRoom:
+                    collectButton.image.sprite = nutritionSprite;
+                    break;
+                case ERoomType.ResourceRoomWood:
+                    collectButton.image.sprite = woodSprite;
+                    break;
+                case ERoomType.ResourceRoomStone:
+                    collectButton.image.sprite = stoneSprite;
+                    break;
+                case ERoomType.ResourceRoomMetal:
+                    collectButton.image.sprite = metalSprite;
+                    break;
+                case ERoomType.ResearchRoom:
+                    collectButton.image.sprite = vialSprite;
+                    break;
             }
         }
         collectButton.gameObject.SetActive(true);
