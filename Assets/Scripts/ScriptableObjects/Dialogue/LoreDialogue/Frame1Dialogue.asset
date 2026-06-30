@@ -13,13 +13,21 @@ MonoBehaviour:
   m_Name: Frame1Dialogue
   m_EditorClassIdentifier: 
   dialogue:
-  - speakerName: Father Rat
-    dialogue: Who did this to you?
+  - speakerName: Cheeser
+    dialogue: "Dad look! The newspaper! Isn\u2019t that Remi? Is he-"
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
-  - speakerName: Remi
-    dialogue: The humans, the cheese they laid out, it looked so succulent, so I
-      took a bite. They poisoned the cheese; they want us gone.
+  - speakerName: Father Rat
+    dialogue: "Give me that. You\u2019re too young to be looking at that."
+    printDuration: 0.02
+    dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
+  - speakerName: Cheeser
+    dialogue: But-
+    printDuration: 0.02
+    dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
+  - speakerName: Father Rat
+    dialogue: "I\u2019m sure your cousin is okay. Hop along, I have somewhere to
+      go."
     printDuration: 0.02
     dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
   endScene: 0
