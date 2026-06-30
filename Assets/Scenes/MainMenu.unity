@@ -891,6 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605124218}
   - component: {fileID: 605124219}
+  - component: {fileID: 605124220}
   m_Layer: 5
   m_Name: AudioSlider
   m_TagString: Untagged
@@ -964,13 +965,39 @@ MonoBehaviour:
   m_FillRect: {fileID: 1272757204}
   m_HandleRect: {fileID: 980136505}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605124220}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: ApplySettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &605124220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605124217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beda7432de1cb0145a1dbb04391eebb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: d101b2a05e53a574fa6c7697f8c64f4e, type: 2}
+  slider: {fileID: 605124219}
 --- !u!1 &635007342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,8 +1499,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 635007343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0.49995, y: 0}
+  m_AnchorMax: {x: 0.49995, y: 1}
   m_AnchoredPosition: {x: -4.100006, y: -0.29999924}
   m_SizeDelta: {x: 40, y: 1.5500002}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2049,7 +2076,7 @@ RectTransform:
   m_Father: {fileID: 766550448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0.49995, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

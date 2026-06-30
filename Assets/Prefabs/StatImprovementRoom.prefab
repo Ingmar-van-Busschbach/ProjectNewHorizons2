@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 3.1781573
       objectReference: {fileID: 0}
+    - target: {fileID: 2172574405210524885, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: d101b2a05e53a574fa6c7697f8c64f4e, type: 2}
     m_RemovedComponents:
     - {fileID: 6435894610388345562, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
     - {fileID: 3933183916544067796, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
