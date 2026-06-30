@@ -37,13 +37,16 @@ public class UnlockMenuHandler : MonoBehaviour
     {
         if (CheckResourceCount())
         {
+            ResourceManager.instance.ResourceHandler(EResourceType.Wood, -currentRoomToUnlock.woodToUnlock);
+            ResourceManager.instance.ResourceHandler(EResourceType.Stone, -currentRoomToUnlock.stoneToUnlock);
+            ResourceManager.instance.ResourceHandler(EResourceType.Metal, -currentRoomToUnlock.metalToUnlock);
             currentRoomToUnlock.unlockedRoom = true;
             contextSelector.AnimateRoomUnlockMenu(false);
+            DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
+            if (currentRoomToUnlock.gameObject.TryGetComponent(out RoomStorageHandler storageHandler))
+            {
+                storageHandler.storageUpgrade();
+            }
         }
-        if (currentRoomToUnlock.gameObject.TryGetComponent(out RoomStorageHandler storageHandler))
-        {
-            storageHandler.storageUpgrade();
-        }
-        DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
     }
 }

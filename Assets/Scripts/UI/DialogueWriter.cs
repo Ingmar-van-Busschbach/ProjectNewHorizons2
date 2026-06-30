@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.SceneManagement;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
@@ -15,6 +16,8 @@ public class DialogueWriter : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private float waitTillAutoNextDialogue = 4;
     [SerializeField] private UnityEvent endScene;
+    [SerializeField] private Image backgroundImage;
+    [SerializeField] private Image foregroundImage;
     //[SerializeField] private InputActionReference clickInput;
     private InputAction interact;
     private DialogueData currentDialogue;
@@ -62,6 +65,14 @@ public class DialogueWriter : MonoBehaviour
     {
         currentDialogue = dialogueData;
         currentDialogueIndex = 0;
+        if (backgroundImage != null)
+        {
+            backgroundImage.gameObject.SetActive(true);
+        }
+        if (foregroundImage != null)
+        {
+            foregroundImage.gameObject.SetActive(true);
+        }
         WriteDialogue(currentDialogue.dialogue[currentDialogueIndex]);
     }
 
@@ -110,6 +121,14 @@ public class DialogueWriter : MonoBehaviour
             StopCoroutine(routine);
             nameText.text = "";
             dialogueText.text = "";
+            if (backgroundImage != null)
+            {
+                backgroundImage.gameObject.SetActive(false);
+            }
+            if (foregroundImage != null)
+            {
+                foregroundImage.gameObject.SetActive(false);
+            }
             audioSource.Stop();
             if (currentDialogue.endScene)
             {
