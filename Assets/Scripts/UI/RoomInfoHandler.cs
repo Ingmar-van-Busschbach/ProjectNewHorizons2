@@ -33,13 +33,13 @@ public class RoomInfoHandler : MonoBehaviour
             switch (resourceRoom.roomType)
             {
                 case ERoomType.ResourceRoomWood:
-                    dropDownHandler.dropdown.value = 0;
+                    dropDownHandler.dropdown.SetValueWithoutNotify(0);
                     break;
                 case ERoomType.ResourceRoomStone:
-                    dropDownHandler.dropdown.value = 1;
+                    dropDownHandler.dropdown.SetValueWithoutNotify(1);
                     break;
                 case ERoomType.ResourceRoomMetal:
-                    dropDownHandler.dropdown.value = 2;
+                    dropDownHandler.dropdown.SetValueWithoutNotify(2);
                     break;
             }
             
