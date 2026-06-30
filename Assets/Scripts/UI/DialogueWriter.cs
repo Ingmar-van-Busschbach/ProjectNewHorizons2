@@ -65,8 +65,14 @@ public class DialogueWriter : MonoBehaviour
     {
         currentDialogue = dialogueData;
         currentDialogueIndex = 0;
-        backgroundImage.gameObject.SetActive(true);
-        foregroundImage.gameObject.SetActive(true);
+        if (backgroundImage != null)
+        {
+            backgroundImage.gameObject.SetActive(true);
+        }
+        if (foregroundImage != null)
+        {
+            foregroundImage.gameObject.SetActive(true);
+        }
         WriteDialogue(currentDialogue.dialogue[currentDialogueIndex]);
     }
 
@@ -115,8 +121,14 @@ public class DialogueWriter : MonoBehaviour
             StopCoroutine(routine);
             nameText.text = "";
             dialogueText.text = "";
-            backgroundImage.gameObject.SetActive(false);
-            foregroundImage.gameObject.SetActive(false);
+            if (backgroundImage != null)
+            {
+                backgroundImage.gameObject.SetActive(false);
+            }
+            if (foregroundImage != null)
+            {
+                foregroundImage.gameObject.SetActive(false);
+            }
             audioSource.Stop();
             if (currentDialogue.endScene)
             {
