@@ -1851,6 +1851,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6631720333473854156, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
+      propertyPath: dayCycleProgress
+      value: 
+      objectReference: {fileID: 270905930}
     - target: {fileID: 7255424269149917792, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 54
@@ -6261,6 +6265,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1380144674760463541, guid: f70b270f88178f640a654b470cf5290f, type: 3}
   m_PrefabInstance: {fileID: 267738780}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &270905930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4452075499924542781, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+  m_PrefabInstance: {fileID: 6400776424531759944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &276618802
 PrefabInstance:
   m_ObjectHideFlags: 0
