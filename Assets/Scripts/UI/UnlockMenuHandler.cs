@@ -42,7 +42,10 @@ public class UnlockMenuHandler : MonoBehaviour
             ResourceManager.instance.ResourceHandler(EResourceType.Metal, -currentRoomToUnlock.metalToUnlock);
             currentRoomToUnlock.unlockedRoom = true;
             contextSelector.AnimateRoomUnlockMenu(false);
-            DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
+            if(currentRoomToUnlock.unlockDialogue != null)
+            {
+                DialogueWriter.Instance.InitializeDialogue(currentRoomToUnlock.unlockDialogue);
+            }
             if (currentRoomToUnlock.gameObject.TryGetComponent(out RoomStorageHandler storageHandler))
             {
                 storageHandler.storageUpgrade();
