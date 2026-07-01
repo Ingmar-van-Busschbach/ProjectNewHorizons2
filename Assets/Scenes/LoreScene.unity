@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2087664504}
   dialogueText: {fileID: 1838787875}
-  waitTillAutoNextDialogue: 10
+  waitTillAutoNextDialogue: 6
   endScene:
     m_PersistentCalls:
       m_Calls: []
