@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
@@ -25,7 +25,12 @@ public class ContextSelector : MonoBehaviour
     [SerializeField] private RectTransform roomUnlockMenu;
     [SerializeField] private RectTransform ratInfoMenu;
     [SerializeField] private RectTransform roomInfoMenu;
-    [SerializeField] private DialogueData ratDragTutorialDialogue;
+    [SerializeField] private Button roomInfoButton;
+    [SerializeField] private Button ratInfoButton;
+    [SerializeField] private DialogueData ratInfoTutorialDialogue;
+    [SerializeField] private DialogueData roomInfoTutorialDialogue;
+    [SerializeField] private DialogueData ratSelectedTutorialDialogue;
+    [SerializeField] private DialogueData roomSelectedTutorialDialogue;
 
     [Header("Settings")]
     [Tooltip("The offset for the drag highlight. Should be a positive numner between 0 and 5.")]
@@ -46,7 +51,12 @@ public class ContextSelector : MonoBehaviour
     private Vector2 roomUnlockMenuPosition;
     private Vector2 ratInfoMenuPosition;
     private Vector2 roomInfoMenuPosition;
-    private bool hasPlayedDragTutorialDialogue;
+    private bool hasPlayedRatInfoTutorialDialogue;
+    private bool hasPlayedRoomInfoTutorialDialogue;
+    private bool hasPlayedRatSelectionTutorialDialogue;
+    private bool hasPlayedRoomSelectionTutorialDialogue;
+    private bool ratInfoMenuOnScreen;
+    private bool roomInfoMenuOnScreen;
 
     // Components
     private GameObject selectedObject;
@@ -77,7 +87,7 @@ public class ContextSelector : MonoBehaviour
             return;
         }
         Vector2 mousePosition = pointerPositionInput.action.ReadValue<Vector2>();
-        #if UNITY_EDITOR
+        #if UNITY_EDITOR || UNITY_STANDALONE_WIN
         // On click/touch start
         if (clickInput.action.WasPressedThisFrame())
         {
@@ -186,16 +196,20 @@ public class ContextSelector : MonoBehaviour
         if (selectedObject.TryGetComponent(out Character character))
         {
             AnimateRoomUnlockMenu(false);
-            AnimateRatInfoMenu(true);
             AnimateRoomInfoMenu(false);
+            roomInfoButton.gameObject.SetActive(false);
+            if (!ratInfoMenuOnScreen)
+            {
+                ratInfoButton.gameObject.SetActive(true);
+            }
             if (ratInfoMenu.TryGetComponent(out RatStatDisplay ratStatDisplay))
             {
                 ratStatDisplay.DisplayStats(character.stats, character.statPlugs, character.ratName, character);
             }
-            if (!hasPlayedDragTutorialDialogue)
+            if (!hasPlayedRatSelectionTutorialDialogue)
             {
-                hasPlayedDragTutorialDialogue = true;
-                DialogueWriter.Instance.InitializeDialogue(ratDragTutorialDialogue);
+                hasPlayedRatSelectionTutorialDialogue = true;
+                DialogueWriter.Instance.InitializeDialogue(ratSelectedTutorialDialogue);
             }
         }
     }
@@ -206,6 +220,7 @@ public class ContextSelector : MonoBehaviour
         if(selectedObject.TryGetComponent(out Room room))
         {
             AnimateRatInfoMenu(false);
+            ratInfoButton.gameObject.SetActive(false);
             if (!room.unlockedRoom)
             {
                 AnimateRoomUnlockMenu(true);
@@ -216,15 +231,42 @@ public class ContextSelector : MonoBehaviour
             }
             else
             {
-                AnimateRoomInfoMenu(true);
+                if (!roomInfoMenuOnScreen)
+                {
+                    roomInfoButton.gameObject.SetActive(true);
+                }
                 if(roomInfoMenu.TryGetComponent(out RoomInfoHandler roomInfoHandler))
                 {
                     roomInfoHandler.DisplayInfo(room);
                 }
             }
+            if (!hasPlayedRoomSelectionTutorialDialogue)
+            {
+                hasPlayedRoomSelectionTutorialDialogue = true;
+                DialogueWriter.Instance.InitializeDialogue(roomSelectedTutorialDialogue);
+            }
         }
         
     }
+
+    public void PlayRatInfoTutorial()
+    {
+        if (!hasPlayedRatInfoTutorialDialogue)
+        {
+            hasPlayedRatInfoTutorialDialogue = true;
+            DialogueWriter.Instance.InitializeDialogue(ratInfoTutorialDialogue);
+        }
+    }
+
+    public void PlayRoomInfoTutorial()
+    {
+        if (!hasPlayedRoomInfoTutorialDialogue)
+        {
+            hasPlayedRoomInfoTutorialDialogue = true;
+            DialogueWriter.Instance.InitializeDialogue(roomInfoTutorialDialogue);
+        }
+    }
+
     private void Deselect()
     {
         selectionType = ESelectionType.None;
@@ -242,6 +284,7 @@ public class ContextSelector : MonoBehaviour
 
     public void AnimateRatInfoMenu(bool onScreen)
     {
+        ratInfoMenuOnScreen = onScreen;
         if (ratInfoMenuAnimation != null)
         {
             StopCoroutine(ratInfoMenuAnimation);
@@ -251,6 +294,7 @@ public class ContextSelector : MonoBehaviour
 
     public void AnimateRoomInfoMenu(bool onScreen)
     {
+        roomInfoMenuOnScreen = onScreen;
         if (roomInfoMenuAnimation != null)
         {
             StopCoroutine(roomInfoMenuAnimation);
