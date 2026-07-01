@@ -487,7 +487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: 54}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542747851
@@ -1049,7 +1049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &740284892
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &918930867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 105}
+  m_AnchoredPosition: {x: -5, y: 105}
   m_SizeDelta: {x: 2200, y: 555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &954107806
@@ -2154,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -77.5}
+  m_AnchoredPosition: {x: -428, y: 70}
   m_SizeDelta: {x: 1000, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391308839
@@ -2177,8 +2177,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Eden de Haan\nSelkie Vosseberg\nIngmar van Busschbach\nEvelien de Wals\nDennis
-    Mr\u017Eljak\nDaphne Harmsen\nJay Ahne"
+  m_text: "Eden de Haan\n\nSelkie Vosseberg\n\nIngmar van Busschbach\n\nEvelien de
+    Wals\n\nDennis Mr\u017Eljak\n\nDaphne Harmsen\n\nJay Ahne"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03cc31a4739b16640a8d55a2bb05af5f, type: 2}
   m_sharedMaterial: {fileID: -7005984784359725181, guid: 03cc31a4739b16640a8d55a2bb05af5f, type: 2}
@@ -2205,8 +2205,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2247,7 +2247,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1391308840
@@ -3151,7 +3151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -77.5}
+  m_AnchoredPosition: {x: 727, y: 3}
   m_SizeDelta: {x: 1000, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071667182
@@ -3174,9 +3174,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lead Designer & Gameplay Mechanics\nAudio & UI Design\nLead Engineer &
-    Git Manager\nTeam Lead & Engineer\nLead Artist & 3D Environment\n3D Environment
-    & UI art \n2D Character & UI art \n"
+  m_text: "Lead Designer & Gameplay Mechanics\n\nAudio & UI Design\n\nLead Engineer
+    & Git Manager\n\nTeam Lead & Engineer\n\nLead Artist & 3D Environment\n\n3D Environment
+    & UI art \n\n2D Character & UI art \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 03cc31a4739b16640a8d55a2bb05af5f, type: 2}
   m_sharedMaterial: {fileID: -7005984784359725181, guid: 03cc31a4739b16640a8d55a2bb05af5f, type: 2}
@@ -3203,13 +3203,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3242,10 +3242,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 303.4953, y: -61.402023, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2071667183
