@@ -572,8 +572,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2601acdce7ce0774f86190b210cdc227, type: 2}
   backgroundSprite: {fileID: 374932060}
   spritesToPlay:
-  - {fileID: 21300000, guid: 51f14a05ecadffc47b8644bac997a6f9, type: 3}
-  - {fileID: 21300000, guid: 6135d9e54d33eba4bbd7183f7456a7ca, type: 3}
+  - {fileID: 21300000, guid: f93d21b4ec73a6b4b9e02506d9ada4c4, type: 3}
+  - {fileID: 21300000, guid: 8720b126d0af7fd4eb7139baa710b454, type: 3}
   sceneswapButton: {fileID: 1202913627}
 --- !u!114 &669823194
 MonoBehaviour:
