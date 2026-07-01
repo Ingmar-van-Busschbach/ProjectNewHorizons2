@@ -1883,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6631720333473854156, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
+      propertyPath: NutritionStarter
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6777855652773803091, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: m_IsActive
       value: 0
