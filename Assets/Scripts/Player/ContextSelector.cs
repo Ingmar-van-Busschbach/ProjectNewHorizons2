@@ -77,7 +77,7 @@ public class ContextSelector : MonoBehaviour
             return;
         }
         Vector2 mousePosition = pointerPositionInput.action.ReadValue<Vector2>();
-        #if UNITY_EDITOR
+        #if UNITY_EDITOR || UNITY_STANDALONE_WIN
         // On click/touch start
         if (clickInput.action.WasPressedThisFrame())
         {
