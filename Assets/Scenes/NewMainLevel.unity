@@ -3901,6 +3901,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4901762738187194146, guid: 1779c2b292416d84ba026c490570d484, type: 3}
   m_PrefabInstance: {fileID: 133614579}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &138566025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6554795748279712689, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+  m_PrefabInstance: {fileID: 6400776424531759944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &140919852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43675,6 +43680,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1088824906}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 138566025}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143974413365412307, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3992520796874492613, guid: 6538e6bb4e4cfaa4c8038f3735a82589, type: 3}
       propertyPath: m_fontAsset
       value: 
