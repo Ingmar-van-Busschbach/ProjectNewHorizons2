@@ -1737,7 +1737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1471111505960997094, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: waitTillAutoNextDialogue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1612376574534366874, guid: 57997736d85e80648ab2ded5e8b16994, type: 3}
       propertyPath: m_Pivot.x
