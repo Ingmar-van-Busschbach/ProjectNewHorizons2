@@ -11,14 +11,11 @@ public class RatStatDisplay : MonoBehaviour
     [SerializeField] private TMP_Text ratNameText;
     [SerializeField] private Button infectButton;
     private Character character;
-
+    private Stat ratStats;
     public void DisplayStats(Stat ratStats, StatPlugs statPlugs, string ratName, Character character)
     {
         this.character = character;
-        resourcefulness.value = ratStats.recourcefulness;
-        athletics.value = ratStats.athletics;
-        tempo.value = ratStats.tempo;
-        smarts.value = ratStats.smarts;
+        this.ratStats = ratStats;
         Stat maxStats = statPlugs.MaxStats();
         resourcefulness.maxValue = maxStats.recourcefulness;
         athletics.maxValue = maxStats.athletics;
@@ -40,10 +37,17 @@ public class RatStatDisplay : MonoBehaviour
 
     public void Update()
     {
-        if(character != null)
+        if (character != null)
         {
             infectButton.gameObject.SetActive(ResourceManager.instance.plagueVials > 0 && !character.isInfected);
+
         }
-        
+        if (ratStats != null)
+        {
+            resourcefulness.value = ratStats.recourcefulness;
+            athletics.value = ratStats.athletics;
+            tempo.value = ratStats.tempo;
+            smarts.value = ratStats.smarts;
+        }
     }
 }
