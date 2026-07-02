@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
   m_Name: Line1Frame2
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - speakerName: Father Rat
+    dialogue: Doctor, Remi got poisoned up there, I saw it in the paper, can we develop
+      an antidote for this, please. We are being exterminated.
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
   endScene: 0

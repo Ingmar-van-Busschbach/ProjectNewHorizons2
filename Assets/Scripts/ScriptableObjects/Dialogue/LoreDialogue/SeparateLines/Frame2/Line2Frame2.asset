@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
   m_Name: Line2Frame2
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019m sorry, but Remi is already gone. We can't make such an antidote.
+      What we can have is revenge."
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
   endScene: 0

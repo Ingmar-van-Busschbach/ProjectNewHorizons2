@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
   m_Name: Line2Frame3
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - speakerName: Plague Doctor Rat
+    dialogue: "I\u2019ve devised a plan to make a plague like no other. I call it:
+      the Opus Plague."
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
   endScene: 0

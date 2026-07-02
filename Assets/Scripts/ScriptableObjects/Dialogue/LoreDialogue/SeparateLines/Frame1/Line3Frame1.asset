@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
   m_Name: Line3Frame1
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - speakerName: Cheeser
+    dialogue: But-
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
   endScene: 0
