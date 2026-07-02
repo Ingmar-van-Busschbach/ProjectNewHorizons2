@@ -61,6 +61,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2568985159315493705}
   m_SourcePrefab: {fileID: 100100000, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+--- !u!82 &1992195077190395103 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9206676104976350509, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+  m_PrefabInstance: {fileID: 7233095450944215538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2020095291350758419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8676690507295927777, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
@@ -85,6 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomAmbience: {fileID: 8811175110492542247}
   roomlight: {fileID: 2020095291350758419}
+  collectSound: {fileID: 1992195077190395103}
   characterLocations: []
   unlockedRoom: 0
   roomName: 

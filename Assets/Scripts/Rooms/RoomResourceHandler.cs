@@ -28,6 +28,12 @@ public class RoomResourceHandler : Room
     public Sprite nutritionSprite;
     public Sprite vialSprite;
 
+    [SerializeField] private AudioClip woodCollectionSound;
+    [SerializeField] private AudioClip stoneCollectionSound;
+    [SerializeField] private AudioClip metalCollectionSound;
+    [SerializeField] private AudioClip nutritionCollectionSound;
+    [SerializeField] private AudioClip vialCollectionSound;
+
     private void Start()
     {
         StartCoroutine(ResourceHandler());
@@ -97,21 +103,27 @@ public class RoomResourceHandler : Room
         switch (roomType)
         {
             case ERoomType.NutritionRoom:
+                collectSound.clip = nutritionCollectionSound;
                 ResourceManager.instance.ResourceHandler(EResourceType.Nutrition, nutritionAmount * characterIndex.Count);
                 break;
             case ERoomType.ResourceRoomWood:
+                collectSound.clip = woodCollectionSound;
                 ResourceManager.instance.ResourceHandler(EResourceType.Wood, woodAmount * characterIndex.Count);
                 break;
             case ERoomType.ResourceRoomStone:
+                collectSound.clip = stoneCollectionSound;
                 ResourceManager.instance.ResourceHandler(EResourceType.Stone, stoneAmount * characterIndex.Count);
                 break;
             case ERoomType.ResourceRoomMetal:
+                collectSound.clip = metalCollectionSound;
                 ResourceManager.instance.ResourceHandler(EResourceType.Metal, metalAmount * characterIndex.Count);
                 break; 
             case ERoomType.ResearchRoom:
+                collectSound.clip = vialCollectionSound;
                 ResourceManager.instance.ResourceHandler(EResourceType.PlagueVials, plagueVialAmount * characterIndex.Count);
                 break;
         }
+        collectSound.Play();
         StartCoroutine(ResourceHandler());
     }
 
