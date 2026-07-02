@@ -460,6 +460,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8676690507295927777, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
   m_PrefabInstance: {fileID: 6355312004002846927}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &2879548092991710690 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9206676104976350509, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
+  m_PrefabInstance: {fileID: 6355312004002846927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3857361696821521806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7906773512673768769, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
@@ -494,6 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomAmbience: {fileID: 5049681361513763866}
   roomlight: {fileID: 2331552421894763822}
+  collectSound: {fileID: 2879548092991710690}
   characterLocations:
   - {fileID: 3857361696821521806}
   - {fileID: 2199031871022922024}
@@ -524,6 +530,11 @@ MonoBehaviour:
   metalSprite: {fileID: 21300000, guid: d00519d07962ac544a8542ddfc9945e6, type: 3}
   nutritionSprite: {fileID: 21300000, guid: 6f8602b7e94f93d4eaf401f4b4d37326, type: 3}
   vialSprite: {fileID: 21300000, guid: 3952a83c6936e204b82199cc94ac4d17, type: 3}
+  woodCollectionSound: {fileID: 0}
+  stoneCollectionSound: {fileID: 0}
+  metalCollectionSound: {fileID: 0}
+  nutritionCollectionSound: {fileID: 0}
+  vialCollectionSound: {fileID: 0}
 --- !u!4 &8480083828792215178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3287018360636464709, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
