@@ -7,6 +7,7 @@ public class Room : MonoBehaviour
 {
     public AudioSource roomAmbience;
     [SerializeField] private GameObject roomlight;
+    [SerializeField] protected AudioSource collectSound;
     public List<Transform> characterLocations = new();
     public Dictionary<Character, int> characterIndex = new();
     public bool unlockedRoom;

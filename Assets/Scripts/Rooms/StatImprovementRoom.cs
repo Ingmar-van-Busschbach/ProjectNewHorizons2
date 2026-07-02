@@ -49,6 +49,7 @@ public class StatImprovementRoom : Room
             character.stats.Add(stat);
             character.stats.ClampToMaxStats(statPlugs.MaxStats());
         }
+        collectSound.Play();
         StartCoroutine(ImproveStats());
     }
 }
