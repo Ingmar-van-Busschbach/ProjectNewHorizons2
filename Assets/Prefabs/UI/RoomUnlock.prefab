@@ -902,7 +902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: c4e7ec1824df8d44796d77883be70d2d, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1363,3 +1363,4 @@ MonoBehaviour:
   stoneToUnlock: {fileID: 5791957689343037573}
   metalToUnlock: {fileID: 5362417669933579292}
   unlockButton: {fileID: 96351966070277949}
+  contextSelector: {fileID: 0}
