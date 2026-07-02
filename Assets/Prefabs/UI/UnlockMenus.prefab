@@ -2679,10 +2679,6 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7643870894110989049, guid: 77637d2d31b008b4b85a87e273194591, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c769d0440408b4e4f839390581b2758d, type: 3}
     - target: {fileID: 7671206051504849868, guid: 77637d2d31b008b4b85a87e273194591, type: 3}
       propertyPath: m_SizeDelta.x
       value: 120
