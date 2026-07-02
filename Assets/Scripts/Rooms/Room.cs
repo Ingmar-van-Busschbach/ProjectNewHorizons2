@@ -8,6 +8,7 @@ public class Room : MonoBehaviour
     public AudioSource roomAmbience;
     [SerializeField] private GameObject roomlight;
     [SerializeField] protected AudioSource collectSound;
+    public Image unlockImage;
     public List<Transform> characterLocations = new();
     public Dictionary<Character, int> characterIndex = new();
     public bool unlockedRoom;
@@ -23,6 +24,7 @@ public class Room : MonoBehaviour
     [Tooltip("Time in seconds it takes to produce selected resource")]
     public float timeToProduce;
     [HideInInspector] public float currentTime;
+    
 
     private void Update()
     {
