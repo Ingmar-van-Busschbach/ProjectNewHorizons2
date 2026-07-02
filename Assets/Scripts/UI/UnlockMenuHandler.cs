@@ -41,6 +41,7 @@ public class UnlockMenuHandler : MonoBehaviour
             ResourceManager.instance.ResourceHandler(EResourceType.Stone, -currentRoomToUnlock.stoneToUnlock);
             ResourceManager.instance.ResourceHandler(EResourceType.Metal, -currentRoomToUnlock.metalToUnlock);
             currentRoomToUnlock.unlockedRoom = true;
+            currentRoomToUnlock.unlockImage.gameObject.SetActive(false);
             contextSelector.AnimateRoomUnlockMenu(false);
             if(currentRoomToUnlock.unlockDialogue != null)
             {

@@ -20117,6 +20117,22 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: d101b2a05e53a574fa6c7697f8c64f4e, type: 2}
+    - target: {fileID: 5952399977731087128, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952399977731087128, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952399977731087128, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952399977731087128, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6740246342574792386, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60
@@ -20156,6 +20172,14 @@ PrefabInstance:
     - target: {fileID: 6740246342574792386, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197910213266568452, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197910213266568452, guid: a966ffa5ee37c944ab36b55137f1afcc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.82
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22451,6 +22475,10 @@ PrefabInstance:
     - target: {fileID: 5772669753982128166, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772669753982128166, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5772669753982128166, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: m_ConstrainProportionsScale
