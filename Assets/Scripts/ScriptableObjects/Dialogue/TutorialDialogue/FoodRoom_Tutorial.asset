@@ -14,9 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: "The bar provides our food, that is, as long as someone is working
-      there, of course. Be sure to keep it running, as all your rats require food
-      every day! Why don\u2019t you drag a rat to it? "
+    dialogue: 'The bar provides our food, that is, as long as someone is working
+      there, of course. Be sure to keep it running!! '
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: 'Every day, each rat requires one piece of food. You can see the day
+      go by on the timer on the bottom left of your screen. '
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: "Also, the more rats you drag to a room, the more it produces! With
+      the resources, you\u2019ll be able to rebuild and unlock our other rooms. You\u2019ll
+      see me around when you do. Good luck! "
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: '>>>Drag a rat to the bar<<< '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

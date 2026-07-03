@@ -14,18 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: "This is the rat\u2019s individual passport! It\u2019ll tell you about
-      them, including their R.A.T.S. stats. "
+    dialogue: "This is the rat\u2019s very own passport! The R.A.T.S. statistics
+      are most important to us. "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: Their Resourcefulness will tell you how productive they are, and Athletics
-      helps the rat survive when sent out to spread the plague later on.
+    dialogue: 'Press on the info button to see what each statistic does! '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: "Tempo is how fast the rat is! Smarts, that\u2019ll be important once
-      we recover my laboratory."
+    dialogue: '>>>Tap the trash room, to the right<<< '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

@@ -14,22 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: "Oh! The school, that\u2019ll be very important to you in a moment. "
+    dialogue: "Oh! You\u2019ve restored the school. "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: 'You can see whether a rat is educated in its Smarts statistics, and
-      we need some proper scientists to develop my Opus Plague further. '
+    dialogue: 'You can see how clever a rat is in the Smarts statistics, and we need
+      some proper scientists to develop my Opus Plague further.  '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: 'After some time, the rats you assign here will graduate and receive
-      official permission to work in the lab alongside me. '
+    dialogue: "The smarter the rat is, the better it\u2019ll produce the vials we
+      need to spread the plague. "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: "That is, if a little educational discipline doesn\u2019t deter them,
-      of course\u2026"
+    dialogue: '>>>Unlock the plague research room<<< '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

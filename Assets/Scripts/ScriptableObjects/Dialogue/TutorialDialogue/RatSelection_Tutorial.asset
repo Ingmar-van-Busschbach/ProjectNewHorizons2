@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: You selected a rat! Open the rat info menu on the right!
+    dialogue: You selected a rat!
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: '>>>Press button to open Passport<<< '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0
