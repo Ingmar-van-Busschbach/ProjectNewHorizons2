@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
-  m_Name: Frame3Dialogue
+  m_Name: Frame2DialogueL3
   m_EditorClassIdentifier: 
   dialogue:
-  - speakerName: Father Rat
-    dialogue: "The humans have lorded over us for far too long. It's time we take
-      them down a peg and show them what we\u2019re worth!"
-    printDuration: 0.02
-    dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: "I\u2019ve devised a plan to make a plague like no other. I call it:
-      the Opus Plague."
+    dialogue: "I\u2019ve seen rats die more and more of poison, so, I\u2019ve been
+      creating a little something to give them a taste of their own medicine. They
+      fell to the plague once. It will happen again."
     printDuration: 0.02
     dialogueVoice: {fileID: 8300000, guid: ff4ccac19b987d04596426dcffe397c7, type: 3}
   endScene: 0
