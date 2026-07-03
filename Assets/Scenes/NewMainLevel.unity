@@ -25268,15 +25268,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: woodToUnlock
-      value: 35
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: metalToUnlock
-      value: 22
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: stoneToUnlock
-      value: 28
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7415124379817892554, guid: ba7bf194199742b42a7357c97c81055d, type: 3}
       propertyPath: timeToProduce
@@ -38927,6 +38927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6031630801046750581, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
+      propertyPath: unlockDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 3600b46f3c8945647ad887451c5cb500, type: 2}
     - target: {fileID: 8072797914669090222, guid: 6862410056f7d604ba8da404708dbd9e, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.628

@@ -14,19 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: 'Wonderful! That, my friend, is the living room. Have you noticed the
-      Resourcefulness in the R.A.T.S. statistics? '
+    dialogue: 'Wonderful! That, my friend, is the lounge. Have you noticed the Resourcefulness
+      in the R.A.T.S. statistics?  '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: For every rat, their Resourcefulness slowly drains over time. If they
-      feel too down, the rats will produce slower.
+    dialogue: "Every rat\u2019s Resourcefulness slowly drains over time. If they
+      feel too down, the rats will produce slower. "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
-    dialogue: With some time in the living room, their Resourcefulness will slowly
-      build up again. If you keep the spirits high, they might even produce double!
-      So, be sure to switch out your rats over time.
+    dialogue: 'With some time in the lounge, their happiness will slowly increase.
+      If you keep the spirits high, they might even produce double! So, be sure to
+      switch out your rats over time. '
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: '>>>Drag a rat to the lounge<<< '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2759be2ffdb47645b3cf8b2e32470f6, type: 3}
+  m_Name: PlagueSpreadRoom_Tutorial
+  m_EditorClassIdentifier: 
+  dialogue:
+  - speakerName: Plague Doctor
+    dialogue: 'Right, right, whenever you have a vial available, select a rat to
+      see their passport. There will be a button available to infect them. Then,
+      drag them over here!  '
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: "They\u2019ll leave the colony, carrying the plague, and fight for
+      our right to live above the surface!"
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: "Ahem\u2026 I\u2019m getting excited. The bar on top of your screen
+      will show how infected the city above us is. "
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: "Get that bar filled up, and finally, our species will thrive! Careful
+      not to send out our most valuable rats, though. They\u2026 might not always
+      live to tell the tale\u2026"
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: "But! The Athletics of the rat should help them fend for themselves.
+      Wonderful, we have no reason to worry! None at all\u2026"
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor
+    dialogue: '>>>Infect a rat and send it away<<<'
+    printDuration: 0.02
+    dialogueVoice: {fileID: 0}
+  endScene: 0

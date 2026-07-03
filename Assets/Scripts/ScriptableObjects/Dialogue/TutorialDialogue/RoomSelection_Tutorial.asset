@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: You clicked on a room! Unlock it at the bottom of the screen, then
-      click it again and open the room info on the left.
+    dialogue: 'You tapped a room! Unlock it on the bottom of the screen. '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

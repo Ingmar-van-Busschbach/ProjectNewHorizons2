@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogue:
   - speakerName: Plague Doctor Rat
     dialogue: Here you can see the room info! You see what resource it creates, multiplied
-      by how many rats are in the room. For resource rooms, you can also change what
-      resource it produces!
+      by how many rats are in the room. You can also see the time to make resources.
+      For resource rooms, you can even change what resource it produces!
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0

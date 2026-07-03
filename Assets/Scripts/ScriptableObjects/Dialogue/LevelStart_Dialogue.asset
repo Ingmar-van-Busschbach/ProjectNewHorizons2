@@ -23,4 +23,8 @@ MonoBehaviour:
       keep our bar and trash room running. "
     printDuration: 0.05
     dialogueVoice: {fileID: 0}
+  - speakerName: Plague Doctor Rat
+    dialogue: '>>>Tap on a rat<<<'
+    printDuration: 0.05
+    dialogueVoice: {fileID: 0}
   endScene: 0

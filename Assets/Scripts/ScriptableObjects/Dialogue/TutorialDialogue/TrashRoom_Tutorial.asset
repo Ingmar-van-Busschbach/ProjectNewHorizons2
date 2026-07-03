@@ -14,20 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - speakerName: Plague Doctor Rat
-    dialogue: Marvelous! The trash room is where we scavenge our resources. We find
-      our wood, stone and metal scraps there. Assign a rat to it, and see what happens.
+    dialogue: 'You unlocked the trash room! Here, your rats will scavenge for wood,
+      stone and metal. Tap it again and open the room menu on the left. '
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   - speakerName: Plague Doctor Rat
     dialogue: You can tap any room to see its information. Oh, and if you tap the
       trash room, you can select whichever resource you want it to produce. It only
       produces one at a time though, so choose wisely!
-    printDuration: 0.02
-    dialogueVoice: {fileID: 0}
-  - speakerName: Plague Doctor Rat
-    dialogue: "The more rats you assign to a room, the more it produces! With the
-      resources, you\u2019ll be able to rebuild and unlock our other rooms. You\u2019ll
-      see me around when you do. Good luck!  "
     printDuration: 0.02
     dialogueVoice: {fileID: 0}
   endScene: 0
