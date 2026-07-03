@@ -609,7 +609,7 @@ MonoBehaviour:
   vialSprite: {fileID: 21300000, guid: a33147bd5768f9d469c49c84090b1fa9, type: 3}
   woodCollectionSound: {fileID: 8300000, guid: 481f61b4e65921144a960ec020571c67, type: 3}
   stoneCollectionSound: {fileID: 8300000, guid: d7543957160a528469bf4b7d92ed7734, type: 3}
-  metalCollectionSound: {fileID: 8300000, guid: bfdb2041cbe5ae84bb2dbaa6ba4da409, type: 3}
+  metalCollectionSound: {fileID: 8300000, guid: 39bf36d9764edda4798f4396c11b3dba, type: 3}
   nutritionCollectionSound: {fileID: 8300000, guid: 800ebb4f480517743a04831aa54c4ce1, type: 3}
   vialCollectionSound: {fileID: 8300000, guid: 696cd936d821edc478dde400ca0419dd, type: 3}
 --- !u!4 &8480083828792215178 stripped
