@@ -606,12 +606,12 @@ MonoBehaviour:
   stoneSprite: {fileID: 21300000, guid: 89c06fa4f4856fd47bb223c30a176b4c, type: 3}
   metalSprite: {fileID: 21300000, guid: d00519d07962ac544a8542ddfc9945e6, type: 3}
   nutritionSprite: {fileID: 21300000, guid: 6f8602b7e94f93d4eaf401f4b4d37326, type: 3}
-  vialSprite: {fileID: 21300000, guid: 3952a83c6936e204b82199cc94ac4d17, type: 3}
-  woodCollectionSound: {fileID: 0}
-  stoneCollectionSound: {fileID: 0}
-  metalCollectionSound: {fileID: 0}
-  nutritionCollectionSound: {fileID: 0}
-  vialCollectionSound: {fileID: 0}
+  vialSprite: {fileID: 21300000, guid: a33147bd5768f9d469c49c84090b1fa9, type: 3}
+  woodCollectionSound: {fileID: 8300000, guid: 481f61b4e65921144a960ec020571c67, type: 3}
+  stoneCollectionSound: {fileID: 8300000, guid: d7543957160a528469bf4b7d92ed7734, type: 3}
+  metalCollectionSound: {fileID: 8300000, guid: bfdb2041cbe5ae84bb2dbaa6ba4da409, type: 3}
+  nutritionCollectionSound: {fileID: 8300000, guid: 800ebb4f480517743a04831aa54c4ce1, type: 3}
+  vialCollectionSound: {fileID: 8300000, guid: 696cd936d821edc478dde400ca0419dd, type: 3}
 --- !u!4 &8480083828792215178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3287018360636464709, guid: b51dd6b2d728029478782c8cebf8dd28, type: 3}
