@@ -6,7 +6,7 @@ We made this game with a team of 7 (2 engineers, 2 designers, 3 artists) over th
 Release page: https://shrimpcouncil.itch.io/ratrooms
 
 ### Video link
-[<img src="https://img.youtube.com/vi/LvJWJc-JmjA/hqdefault.jpg" width="854" height="480"
+[<img src="https://img.youtube.com/vi/LvJWJc-JmjA/hqdefault.jpg" width="426" height="240"
 />](https://www.youtube.com/embed/LvJWJc-JmjA)
 
 ### Running the project
