@@ -5,7 +5,9 @@ This is a project we made for our second group project of the first year of Saxi
 We made this game with a team of 7 (2 engineers, 2 designers, 3 artists) over the span of 3 weeks.
 Release page: https://shrimpcouncil.itch.io/ratrooms
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v=LvJWJc-JmjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Video link
+[<img src="https://img.youtube.com/vi/LvJWJc-JmjA/hqdefault.jpg" width="854" height="480"
+/>](https://www.youtube.com/embed/LvJWJc-JmjA)
 
 ### Running the project
 To run this project:
