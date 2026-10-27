@@ -1,11 +1,11 @@
 # **ProjectNewHorizons2**
 
-## About this project project
+## About this project
 This is a project we made for our second group project of the first year of Saxion's Creative Media and Game Technologies study. 
 We made this game with a team of 7 (2 engineers, 2 designers, 3 artists) over the span of 3 weeks.
 Release page: https://shrimpcouncil.itch.io/ratrooms
 
-[insert video here]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v=LvJWJc-JmjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Running the project
 To run this project:
